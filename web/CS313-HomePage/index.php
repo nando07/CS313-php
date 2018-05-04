@@ -224,7 +224,7 @@
                                                                 <a class="btn btn-general btn-work-1" href="https://blooming-journey-48310.herokuapp.com/hello.html" target="_blank" title="Show Work" role="button">Heroku</a>
                                                             </div>
                                                             <div id="work-btn-github">
-                                                                <a class="btn btn-general btn-work-2" href="https://blooming-journey-48310.herokuapp.com/hello.html" target="_blank" title="Show Work" role="button">GitHub</a>
+                                                                <a class="btn btn-general btn-work-2" href="https://github.com/nando07/CS313-php/blob/master/web/hello.php" target="_blank" title="Show Work" role="button">GitHub</a>
                                                             </div>
                                                         </div>
 

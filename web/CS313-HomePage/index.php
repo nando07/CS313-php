@@ -347,7 +347,10 @@
                 </div>
             </div>
         </div>
-         <?php include "footer.php";?>
+<div>
+echo "<p>Copyright © " . date("Y") . ", Fernando Gomez</p>";
+echo date("<p>Server Time: </p>" . "D M d, Y G:i a");
+</div>
     </section>
 
     <section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></section>

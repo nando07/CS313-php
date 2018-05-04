@@ -51,7 +51,6 @@
 
                 <div id="home-btn">
                     <a class="btn btn-general btn-home smooth-scroll" href="#my-work-tab" title="See My Work" role="button">See My Work</a>
-<?php include 'footer.php';?>
                 </div>
 
             </div>
@@ -348,9 +347,7 @@
                 </div>
             </div>
         </div>
-         <div>
-            <?php include 'footer.php';?>
-        </div>
+         <?php include "footer.php";?>
     </section>
 
     <section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></section>

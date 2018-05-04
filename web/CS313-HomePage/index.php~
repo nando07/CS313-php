@@ -50,7 +50,7 @@
                 </div>
 
                 <div id="home-btn">
-                    <a class="btn btn-general btn-home smooth-scroll" href="#my-work-tab" title="See My Work" role="button">See My Work</a>
+                    <a class="btn btn-general btn-home smooth-scroll" href="myWork.php" title="See My Work" role="button">See My Work</a>
                 </div>
 
             </div>

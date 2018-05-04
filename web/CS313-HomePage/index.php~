@@ -348,8 +348,9 @@
             </div>
         </div>
 <div>
-echo "<p>Copyright © " . date("Y") . ", Fernando Gomez</p>";
-echo date("<p>Server Time: </p>" . "D M d, Y G:i a");
+<?php echo "<p>Copyright © " . date("Y") . ", Fernando Gomez</p>";
+echo date("<p>Server Time: </p>" . "D M d, Y G:i a"); 
+?>
 </div>
     </section>
 

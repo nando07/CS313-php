@@ -267,10 +267,10 @@
                                                         </p>
                                                         <div id="link-btns">
                                                             <div id="work-btn-heroku">
-                                                                <a class="btn btn-general btn-work-1" href="https://blooming-journey-48310.herokuapp.com/hello.html" target="_blank" title="Show Work" role="button">Heroku</a>
+                                                                <a class="btn btn-general btn-work-1" href="https://blooming-journey-48310.herokuapp.com/CS313-HomePage/index.php" target="_blank" title="Show Work" role="button">Heroku</a>
                                                             </div>
                                                             <div id="work-btn-github">
-                                                                <a class="btn btn-general btn-work-2" href="https://blooming-journey-48310.herokuapp.com/hello.html" target="_blank" title="Show Work" role="button">GitHub</a>
+                                                                <a class="btn btn-general btn-work-2" href="https://github.com/nando07/CS313-php/tree/master/web/CS313-HomePage" target="_blank" title="Show Work" role="button">GitHub</a>
                                                             </div>
                                                         </div>
 
@@ -347,8 +347,7 @@
                 </div>
             </div>
         </div>
-	<div>
-	  <div class="text-center">
+        <div class="text-center">
             <?php 
             $cRight = "Copyright © " . date("Y") . " Fernando Gomez</p>";
             $serverTime = date("D M d, Y G:i a");
@@ -366,9 +365,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.responsiveTabs.js"></script>
     <script src="js/script.js"></script>
-    
+
 
 </body>
 
 </html>
-           

@@ -347,11 +347,12 @@
                 </div>
             </div>
         </div>
-<div>
-<?php echo "<p>Copyright © " . date("Y") . ", Fernando Gomez</p>";
-echo date("<p>Server Time: </p>" . "D M d, Y G:i a"); 
-?>
-</div>
+	<div>
+	  <?php include 'footer.php';
+		echo $cRight;
+		echo $serverTime;
+		?>
+	</div>
     </section>
 
     <section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></section>

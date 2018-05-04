@@ -347,9 +347,7 @@
                 </div>
             </div>
         </div>
-         <div>
-            <?php include 'footer.php';?>
-        </div>
+         <?php include "footer.php";?>
     </section>
 
     <section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></section>

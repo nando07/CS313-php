@@ -1,4 +1,5 @@
 form {
+    padding: 5px 5px 5px 5px;
     border: 1px solid black;
     display: inline-block;
     text-align: left;    
@@ -7,3 +8,9 @@ form {
 body {
     text-align: center; 
 }
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: teal;
+}
+

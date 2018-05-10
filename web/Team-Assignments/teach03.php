@@ -9,8 +9,8 @@
 	
 	<form action="send.php" method="post">
 		Name: <input type="text" name="name" /><br />
-		E-Mail: <input type="text" name="email" /><br />
-		Major: <br />
+		E-Mail: <input type="text" name="email" /><br /><br />
+		Major: <br /><br />
 		
 		<?php
 			$majors = array("Computer Science", "Web Design and Development", "Computer Information Technology", "Computer Engineering");
@@ -20,7 +20,7 @@
 			};
 		?>
 
-		Comments: <br />
+		<br />Comments: <br /><br />
 		<textarea name="comments" rows="4" cols="40"></textarea><br />
 			
 		Continents You've Visited:<br />
@@ -29,7 +29,7 @@
 		Europe<input type="checkbox" name="continents[]" value="EU"><br />
 		Asia<input type="checkbox" name="continents[]" value="AS"><br />
 		Africa<input type="checkbox" name="continents[]" value="AF"><br />
-		Antarctica<input type="checkbox" name="continents[]" value="AN"><br />
+		Antarctica<input type="checkbox" name="continents[]" value="AN"><br /><br />
 		<input type="submit" id="submitBtn" value="Submit" />
     </form>
 </body>

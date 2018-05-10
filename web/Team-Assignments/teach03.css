@@ -1,4 +1,9 @@
 form {
+    border: 1px solid black;
     display: inline-block;
-    text-align: center;
+    text-align: left;    
+}
+
+body {
+    text-align: center; 
 }

@@ -8,7 +8,7 @@
 	<h1>Teach03</h1>
 	
 	<form action="send.php" method="post">
-		name: <input type="text" name="name" /><br />
+		Name: <input type="text" name="name" /><br />
 		E-Mail: <input type="text" name="email" /><br />
 		Major: <br />
 		

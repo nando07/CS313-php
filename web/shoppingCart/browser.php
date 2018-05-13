@@ -1,10 +1,3 @@
-
-<?php
-// Start the session
-session_start();
-$_SESSION['cart']=array();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

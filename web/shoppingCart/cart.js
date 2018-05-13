@@ -230,11 +230,11 @@ $(document).ready(function () {
         var productName = $(productCard).find('.product_name').get(0).innerHTML;
         var productPrice = $(productCard).find('.product_price').get(0).innerHTML;
 
-        //        $.post("myCart.php", 
-        //               {img: productImage,
-        //                name: productName,
-        //                price: productPrice
-        //               });
+               $.post("myCart.php", 
+                      {img: productImage,
+                       name: productName,
+                       price: productPrice
+                      });
 
         $("body").append('<div class="floating-cart"></div>');
 
@@ -260,9 +260,9 @@ $(document).ready(function () {
 
             var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='" + productImage + "' alt='' /></div><span>" + productName + "</span><strong>" + productPrice + "</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";
             
-            $.post("myCart.php", 
-            {"item": cartItem
-            });
+            // $.post("myCart.php", 
+            // {"item": cartItem
+            // });
 
             $("#cart .empty").hide();
             $("#cart").append(cartItem);

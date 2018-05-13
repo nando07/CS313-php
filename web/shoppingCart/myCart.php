@@ -1,7 +1,9 @@
 <?php
 // Declaring session array
-array_push($_SESSION['cart'],'apple','mango','banana');
-array_push($_SESSION['cart'], $_POST['item']); // Items added to cart
+$_SESSION['pName'] = $_POST['name'];
+$_SESSION['pImage'] = $_POST['image'];
+// $_SESSION['pQuantity'] = $_POST['img'];
+$_SESSION['pPrice'] = $_POST['price'];
 
-echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <a href=cart-remove-all.php>Remove all</a><br>";
+echo "Number of Items in the cart = "($_SESSION['name'])." <a href=cart-remove-all.php>Remove all</a><br>";
 ?>

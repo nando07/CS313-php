@@ -2,7 +2,7 @@
 <?php
 // Start the session
 session_start();
-$_SESSION['cart']=array();
+// $_SESSION['cart']=array();
 ?>
 
 <!DOCTYPE html>

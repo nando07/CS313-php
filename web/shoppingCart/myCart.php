@@ -19,6 +19,13 @@
 // Start the session
 session_start();
 array_push($_SESSION['cart'], $_POST['item']);
+foreach($_SESSION['cart'] as $link)
+{
+    if($link == '')
+    {
+        unset($link);
+    }
+}
 
 // echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <a href=cart-remove-all.php>Remove all</a><br>";
 echo '<pre>'; 

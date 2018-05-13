@@ -18,7 +18,6 @@
     <?php
 // Start the session
 session_start();
-$_SESSION['cart']=array();
 array_push($_SESSION['cart'], $_POST['item']);
 
 // echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <a href=cart-remove-all.php>Remove all</a><br>";

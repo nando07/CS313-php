@@ -1,15 +1,3 @@
-<?php
-// Start the session
-session_start();
-$_SESSION['cart']=array();
-array_push($_SESSION['cart'], $_POST['item']);
-
-// echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <a href=cart-remove-all.php>Remove all</a><br>";
-echo '<pre>'; 
-print_r($_SESSION['cart']); 
-echo '</pre>';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +15,17 @@ echo '</pre>';
 <!--<form method="post" action="c"-->
 	<h3>CART</h3>
     <div id="cart">
+    <?php
+// Start the session
+session_start();
+$_SESSION['cart']=array();
+array_push($_SESSION['cart'], $_POST['item']);
+
+// echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <a href=cart-remove-all.php>Remove all</a><br>";
+echo '<pre>'; 
+print_r($_SESSION['cart']); 
+echo '</pre>';
+?>
     	<span class="empty">No items in cart.</span>       
     </div>
 </div>

@@ -18,16 +18,17 @@
     <?php
 // Start the session
 session_start();
+
 array_push($_SESSION['cart'], $_POST['item']);
 $trimmedArray = array_map('trim', $_SESSION['cart']);
 $emptyRemoved = array_filter($_SESSION['cart']);
 
 
 // echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <a href=cart-remove-all.php>Remove all</a><br>";
-echo '<pre>'; 
-print_r($emptyRemoved); 
-echo '</pre>';
-?>
+// echo '<pre>'; 
+// print_r($emptyRemoved); 
+// echo '</pre>';
+// ?>
     	<span class="empty">No items in cart.</span>       
     </div>
 </div>

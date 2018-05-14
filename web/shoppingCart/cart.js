@@ -250,7 +250,7 @@ $(document).ready(function () {
             $('div.floating-cart').remove();
             $("body").removeClass("MakeFloatingCart");
             
-            var id = "?cardInfo=" + $(this).attr('id');
+            var id = "?cartInfo=" + $(this).attr('id');
             print(id);
             $.post('cartData.php'+id);
 

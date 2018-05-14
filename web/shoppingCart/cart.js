@@ -222,6 +222,10 @@ $(document).ready(function () {
     //		});
     //	});
 
+    function delay (URL) {
+        setTimeout( function() { window.location = URL }, 900 );
+    }
+
     $('.add_to_cart').click(function () {
         var pQuant = 0;
         var productCard = $(this).parent();
@@ -252,7 +256,7 @@ $(document).ready(function () {
             
             var id = "?cartInfo=" + $(this).attr('id');
         
-            $.post('cartData.php?cartInfo=m');
+            // $.post('cartData.php?cartInfo=m');
 
             var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='" + productImage + "' alt='' /></div><span>" + productName + "</span><strong>" + productPrice + "</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";
             

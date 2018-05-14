@@ -49,8 +49,8 @@ session_start();
             
                 echo '<div class="cart-item">';
                 echo '<div class="img-wrap">';
-                echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
-                echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["sparkQ"];
+                echo '<img src="https://product2.djicdn.com/uploads/photos/34841/medium_960b93a7-044f-49f6-b450-6d57b9afd829.jpg" alt="spark" /></div>';
+                echo '<span>Spark</span><strong>$399</strong>' . '  x  ' . $_SESSION["sparkQ"];
                 echo '<div class="cart-item-border"></div>';
                 echo '<div class="delete-item"></div></div>';
             }
@@ -60,8 +60,8 @@ session_start();
             
                     echo '<div class="cart-item">';
                     echo '<div class="img-wrap">';
-                    echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
-                    echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["ph4Q"];
+                    echo '<img src="https://product2.djicdn.com/uploads/photos/34734/medium_baada688-b74f-4bee-9a2d-9ff2e9782b7d.jpg" alt="ph4" /></div>';
+                    echo '<span>Phantom 4</span><strong>$399</strong>' . '  x  ' . $_SESSION["ph4Q"];
                     echo '<div class="cart-item-border"></div>';
                     echo '<div class="delete-item"></div></div>';
                 }
@@ -71,8 +71,8 @@ session_start();
             
                         echo '<div class="cart-item">';
                         echo '<div class="img-wrap">';
-                        echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
-                        echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["ph3Q"];
+                        echo '<img src="https://product2.djicdn.com/uploads/photos/6711/medium_P3C_01.jpg" alt="ph3" /></div>';
+                        echo '<span>Phantom 3</span><strong>$399</strong>' . '  x  ' . $_SESSION["ph3Q"];
                         echo '<div class="cart-item-border"></div>';
                         echo '<div class="delete-item"></div></div>';
                     }
@@ -82,8 +82,8 @@ session_start();
             
                             echo '<div class="cart-item">';
                             echo '<div class="img-wrap">';
-                            echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
-                            echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["inspire2Q"];
+                            echo '<img src="https://product1.djicdn.com/uploads/photos/405/medium_9351802d-9e88-4bb6-979c-48fe81748a33.png" alt="in2" /></div>';
+                            echo '<span>Inspire 2</span><strong>$399</strong>' . '  x  ' . $_SESSION["inspire2Q"];
                             echo '<div class="cart-item-border"></div>';
                             echo '<div class="delete-item"></div></div>';
                         }
@@ -93,8 +93,8 @@ session_start();
             
                                 echo '<div class="cart-item">';
                                 echo '<div class="img-wrap">';
-                                echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
-                                echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["m600Q"];
+                                echo '<img src="https://product4.djicdn.com/uploads/photos/260/medium_f013bf4e-ba1d-4833-88b3-2d3ba62251dd.jpg" alt="m600" /></div>';
+                                echo '<span>Matrice 600</span><strong>$399</strong>' . '  x  ' . $_SESSION["m600Q"];
                                 echo '<div class="cart-item-border"></div>';
                                 echo '<div class="delete-item"></div></div>';
                             }
@@ -104,8 +104,8 @@ session_start();
             
                                     echo '<div class="cart-item">';
                                     echo '<div class="img-wrap">';
-                                    echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
-                                    echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["m100Q"];
+                                    echo '<img src="https://product2.djicdn.com/uploads/photos/3521/medium_p1.jpg" alt="m100" /></div>';
+                                    echo '<span>Matrice 100</span><strong>$399</strong>' . '  x  ' . $_SESSION["m100Q"];
                                     echo '<div class="cart-item-border"></div>';
                                     echo '<div class="delete-item"></div></div>';
                                 }
@@ -115,8 +115,8 @@ session_start();
             
                                         echo '<div class="cart-item">';
                                         echo '<div class="img-wrap">';
-                                        echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
-                                        echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["dGogglesQ"];
+                                        echo '<img src="https://product1.djicdn.com/uploads/photos/33591/medium_64d4667d-431c-4285-9675-2dfe75f7404d.jpg" alt="dG" /></div>';
+                                        echo '<span>DJI Goggles</span><strong>$399</strong>' . '  x  ' . $_SESSION["dGogglesQ"];
                                         echo '<div class="cart-item-border"></div>';
                                         echo '<div class="delete-item"></div></div>';
                                     }

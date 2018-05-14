@@ -15,7 +15,7 @@ session_start();
     <link rel="stylesheet" href="cart-style.css">
     
 </head>
-<body class="f-check">"
+<body class="f-check">
 <div id="header">	
 	<ul>
         <li><a href="https://blooming-journey-48310.herokuapp.com/shoppingCart/myCart.php">My Cart</a></li>

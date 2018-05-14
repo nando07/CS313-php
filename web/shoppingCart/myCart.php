@@ -20,7 +20,7 @@ session_start();
 	<ul>
         <li><a href="https://blooming-journey-48310.herokuapp.com/shoppingCart/browser.php">Browse More</a></li>
 
-        <li><a href="">CONTINUE</a></li>                                              
+        <li><a href="">CHECKOUT</a></li>                                              
     </ul>		
 </div>
 <div id="cart-body">

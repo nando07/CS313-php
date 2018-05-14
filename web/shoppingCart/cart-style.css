@@ -815,7 +815,7 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 .cart-item{	
 	padding: 5px;
 	height: 62px;
-	width: 500px;
+	width: 480px;
 	/* margin-left: -45px; */
 	position:relative;
 	background:#fff;

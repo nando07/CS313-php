@@ -813,10 +813,10 @@ div.cart-icon-bottom{
 body.MakeFloatingCart div.cart-icon-top{z-index:30;}
 body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}	
 .cart-item{	
-	padding: 11px 0 5px 110px;
+	padding: 5px;
 	height: 62px;
 	width: 400px;
-	margin-left: -45px;
+	/* margin-left: -45px; */
 	position:relative;
 	background:#fff;
 	-webkit-transition: all 1000ms ease-out;

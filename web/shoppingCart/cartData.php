@@ -34,7 +34,7 @@ switch ($data) {
 		break;
 }
 $_SESSION["totalProducts"] = $_SESSION["mavicQ"] + $_SESSION["sparkQ"] + $_SESSION["ph4Q"] + $_SESSION["ph3Q"] + $_SESSION["inspire2Q"] + $_SESSION["m600Q"] + $_SESSION["m100Q"] + $_SESSION["dGogglesQ"];
-header("location:browser.php");
+// header("location:browser.php");
 die();
 ?>
 

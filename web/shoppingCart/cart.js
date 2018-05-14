@@ -246,8 +246,9 @@ $(document).ready(function () {
             $("body").addClass("MakeFloatingCart");
         }, 800);
         
-        setTimeout(function delay (URL) {
-             window.location = URL }, 1500);
+        setTimeout(function() {
+            var link = $(this).attr("href");
+             window.location = link }, 1500);
         
         setTimeout(function () {
             $('div.floating-cart').remove();

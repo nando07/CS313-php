@@ -82,7 +82,7 @@ echo $totalQuantity;
                 <div class="shadow"></div>
                 <img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="" />
                 <div class="image_overlay"></div>
-                <a class="add_to_cart" id="m" href="javascript:delay('cartData.php?cartInfo=m')">Add to cart</a>
+                <a class="add_to_cart" id="m" href="cartData.php?cartInfo=m">Add to cart</a>
 <!--                <div class="view_gallery">View gallery</div>                -->
                 <div class="stats">        	
                     <div class="stats-container">

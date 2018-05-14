@@ -802,6 +802,15 @@ div.cart-icon-bottom{
 	top: 143px;
 	left: 65px;
 }
+#quantity {
+	position:absolute;
+	margin:0;
+	width:21px;
+	height:19px;
+	z-index:1;
+	top: 143px;
+	left: 90px;
+}
 body.MakeFloatingCart div.cart-icon-top{z-index:30;}
 body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}	
 .cart-item{	

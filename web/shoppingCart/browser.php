@@ -17,13 +17,6 @@ $_SESSION['cart']= [];
 <body>
 <div id="wrapper">
 
-
-<div class="cart-icon-bottom">
-<a href="myCart.php"><i class="fas fa-cart-plus fa-1x"></i></a>
-<div id="quantity">0</div>
-</div>
-
-
 <div id="info">	
 <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/103844-200.png" height="80px" alt="" />
 </div>
@@ -47,6 +40,10 @@ $_SESSION['cart']= [];
 -->
 
 <div id="grid-selector">
+<div class="cart-icon-bottom">
+<a href="myCart.php"><i class="fas fa-cart-plus fa-1x"></i></a>
+<div id="quantity">0</div>
+</div>
 </div>
 
 <div id="grid">

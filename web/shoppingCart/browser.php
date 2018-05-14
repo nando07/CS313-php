@@ -69,7 +69,7 @@ if(!isset($_SESSION["dGogglesQ"])){
 <a href="myCart.php"><i class="fas fa-cart-plus fa-3x"></i></a>
 <div id="quantity">
 (<?php
-$totalQuantity = $_SESSION["mavicQ"] + $_SESSION["sparkQ"] + $_SESSION["mavicQ"] + $_SESSION["ph3Q"] + $_SESSION["inspire2Q"] + $_SESSION["m600Q"] + $_SESSION["m100Q"] + $_SESSION["dGogglesQ"];
+$totalQuantity = $_SESSION["mavicQ"] + $_SESSION["sparkQ"] + $_SESSION["ph4Q"] + $_SESSION["ph3Q"] + $_SESSION["inspire2Q"] + $_SESSION["m600Q"] + $_SESSION["m100Q"] + $_SESSION["dGogglesQ"];
 echo $totalQuantity;
 ?>)   
 

@@ -40,9 +40,11 @@ session_start();
   echo $firstName;
   echo '! Your items are: ';
   echo "<br>";
+  echo "<br>";
   if ($_SESSION["mavicQ"] > 0) {
       
-    echo '<span>Mavic Air</span><strong> $399 </strong>' . '  x  ' . $_SESSION["mavicQ"];
+    echo '<span>Mavic Air</span><strong> $399 </strong>' . '  x  ' . $_SESSION["mavicQ"] . ' = ' . ( $_SESSION["mavicQ"] * 399);
+
     echo "<br>";
 
             

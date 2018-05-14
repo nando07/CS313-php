@@ -8,27 +8,27 @@ switch ($data) {
     // $_SESSION["mavicQ"] = $_SESSION["mavicQ"] + 1;  
 		break;
 	case 's':
-    $_SESSION["sparkQ"] = $_SESSION["sparkQ"] + 1;
+    unset($_SESSION["sparkQ"]);
 		break;
 	case 'ph4':
-    $_SESSION["ph4Q"] = $_SESSION["ph4Q"] + 1;
+    unset($_SESSION["ph4Q"]);
 		break;
 	case 'ph3':
-    $_SESSION["ph3Q"] = $_SESSION["ph3Q"] + 1;
+    unset($_SESSION["ph3Q"]);
 		break;
 	case 'in2':
-    $_SESSION["inspire2Q"] = $_SESSION["inspire2Q"] + 1;
+    unset($_SESSION["inspire2Q"]);
         break;  
     case 'm600':
-    $_SESSION["m600Q"] = $_SESSION["m600Q"] + 1;
+    unset($_SESSION["m600Q"]);
         break;
     
     case 'm100':
-    $_SESSION["m100Q"] = $_SESSION["m100Q"] + 1;
+    unset($_SESSION["m100Q"]);
         break;
 
     case 'dg':
-    $_SESSION["dGogglesQ"] = $_SESSION["dGogglesQ"] + 1;
+    unset($_SESSION["dGogglesQ"]);
         break;
 	default:
 		echo "Default - No option found";

@@ -47,8 +47,6 @@ $_SESSION['cart']= [];
 -->
 
 <div id="grid-selector">
-<h2>THE BEST DRONES</h2>
-
 </div>
 
 <div id="grid">

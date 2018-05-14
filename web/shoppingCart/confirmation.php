@@ -39,9 +39,11 @@ session_start();
   echo "Thank you, ";
   echo $firstName;
   echo '! Your items are: ';
+  echo "<br>";
   if ($_SESSION["mavicQ"] > 0) {
-      <br>
+      
     echo '<span>Mavic Air</span><strong> $399 </strong>' . '  x  ' . $_SESSION["mavicQ"];
+    echo "<br>";
 
             
     // echo '<div class="cart-item">';

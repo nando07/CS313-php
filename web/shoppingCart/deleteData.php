@@ -4,7 +4,7 @@ $data = $_GET["cartInfo"];
 
 switch ($data) {
     case 'm':
-    unset ($_SESSION["mavicQ"]);
+    unset($_SESSION["mavicQ"]);
     // $_SESSION["mavicQ"] = $_SESSION["mavicQ"] + 1;  
 		break;
 	case 's':

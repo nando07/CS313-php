@@ -29,6 +29,11 @@ session_start();
 <h1>Here is your purchase! Come back again!</h1>
 <h2> 
   <?php 
+
+$totalQuantity = $_SESSION["mavicQ"] + $_SESSION["sparkQ"] + $_SESSION["ph4Q"] + $_SESSION["ph3Q"] + $_SESSION["inspire2Q"] + $_SESSION["m600Q"] + $_SESSION["m100Q"] + $_SESSION["dGogglesQ"];
+
+if ($totalQuantity > 0) {
+
   $firstName = $_POST["firstName"];
   $lastName = $_POST["lastName"];
   $streetAddress = $_POST["streetAddress"];
@@ -111,6 +116,9 @@ session_start();
 
   echo "The items will be sent to: 
    $streetAddress $city $state $zip";
+                        } else {
+                            echo "Sorry, your cart is empty. Try adding some items!";
+                        }
    ?>
 
 

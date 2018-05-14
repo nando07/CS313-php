@@ -26,6 +26,7 @@ session_start();
 <div id="cart-body">
 <div id="sidebar">
 <h2>Your Cart</h3>
+<br><br>
         <div id="cart">
 
 <!-- // $totalQuantity = $_SESSION["mavicQ"] + $_SESSION["sparkQ"] + $_SESSION["ph4Q"] + $_SESSION["mavicQ"] + $_SESSION["ph3Q"] + $_SESSION["inspire2Q"] + $_SESSION["m600Q"] + $_SESSION["m100Q"] + $_SESSION["dGogglesQ"] -->

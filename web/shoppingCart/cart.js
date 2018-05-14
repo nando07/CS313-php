@@ -256,13 +256,21 @@ $(document).ready(function () {
         setTimeout(function () {
             $('div.floating-cart').remove();
             $("body").removeClass("MakeFloatingCart");
-
-
+            
+            var id = $(this).attr('id');
+            $.ajax({
+                url: 'cartData.php',
+                type: "POST",
+                cartInfo: id,
+                success: function(data) {
+                  alert('sweet');
+                }
+              });
             var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='" + productImage + "' alt='' /></div><span>" + productName + "</span><strong>" + productPrice + "</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";
             
-            $.post("myCart.php", 
-            {"item": cartItem
-            });
+            // $.post("myCart.php", 
+            // {"item": cartItem
+            // });
 
             $("#cart .empty").hide();
             $("#cart").append(cartItem);

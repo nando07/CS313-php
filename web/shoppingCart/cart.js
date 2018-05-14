@@ -245,15 +245,10 @@ $(document).ready(function () {
         setTimeout(function () {
             $("body").addClass("MakeFloatingCart");
         }, 800);
-
-        $(function(){
-            $("a").click(function(evt){
-                var link = $(this).attr("href");
-                setTimeout(function() {
-                    window.location.href = link;
-                }, 1500);
-            });
-        });
+        
+        setTimeout(function delay (URL) {
+             window.location = URL }, 1500);
+        
         setTimeout(function () {
             $('div.floating-cart').remove();
             $("body").removeClass("MakeFloatingCart");

@@ -35,7 +35,7 @@ session_start();
         <?php
         if ($_SESSION["mavicQ"] > 0) {
 
-        
+            echo '<div>$_SESSION["mavicQ"]</div>';
             echo '<div class="cart-item">';
             echo '<div class="img-wrap">';
             echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';

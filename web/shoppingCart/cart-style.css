@@ -796,8 +796,6 @@ div.cart-icon-bottom{
 	position:absolute;
 /*	background:#fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/cart.png") 0 -3px no-repeat;*/
 	margin:0;
-	width:21px;
-	height:19px;
 	z-index:1;
 	top: 143px;
 	left: 65px;
@@ -805,10 +803,8 @@ div.cart-icon-bottom{
 #quantity {
 	position:absolute;
 	margin:0;
-	width:21px;
-	height:19px;
 	z-index:1;
-	top: 13px;
+	top: 143px;
 	left: 90px;
 }
 body.MakeFloatingCart div.cart-icon-top{z-index:30;}

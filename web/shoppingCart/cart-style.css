@@ -842,12 +842,13 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 	float:left;
 	/* margin-left:-65px;	 */
 }
-.cart-item img{width:100%; position:relative;top:-10px; padding-right: 10px;}
-.cart-item strong{color:#00c4ff; font-size:16px;}
+.cart-item img{width:100%; position:relative;top:-10px;}
+.cart-item strong{color:#00c4ff; font-size:16px; left: 10px;}
 .cart-item span{
 	color: #393c45;
     display: block;
-    font-size: 14px;
+	font-size: 14px;
+	left: 10px;
  }
 
 .cart-item .delete-item{

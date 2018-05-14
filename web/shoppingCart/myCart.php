@@ -23,10 +23,11 @@ session_start();
         <li><a href="https://blooming-journey-48310.herokuapp.com/shoppingCart/checkout.php">CHECKOUT</a></li>                                              
     </ul>		
 </div>
+<a href="deleteData.php?cartInfo=m">Delete data</a>
 <div id="cart-body">
 <div id="sidebar">
 <h2>Your Cart</h3>
-<a class="add_to_cart" href="deleteData.php?cartInfo=m">Delete data</a>
+
 <br><br>
         <div id="cart">
 

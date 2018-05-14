@@ -29,9 +29,6 @@ session_start();
 <br><br>
         <div id="cart">
 
-<!-- // $totalQuantity = $_SESSION["mavicQ"] + $_SESSION["sparkQ"] + $_SESSION["ph4Q"] + $_SESSION["mavicQ"] + $_SESSION["ph3Q"] + $_SESSION["inspire2Q"] + $_SESSION["m600Q"] + $_SESSION["m100Q"] + $_SESSION["dGogglesQ"] -->
-
-
         <?php
         if ($_SESSION["mavicQ"] > 0) {
 
@@ -41,7 +38,7 @@ session_start();
             echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
             echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["mavicQ"];
             echo '<div class="cart-item-border"></div>';
-            echo '<div class="delete-item"></div></div>';
+            echo '<div class="delete-item" href="deleteData.php?cartInfo=m"></div></div>';
         }
 
             if ($_SESSION["sparkQ"] > 0) {

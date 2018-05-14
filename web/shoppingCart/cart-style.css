@@ -513,8 +513,7 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 }
 
 form {
-    padding: 30px 30px 30px 30px;
-	border: 3px solid #00c4ff;
+    padding: 50px 50px 50px 50px;
 	background-color: whitesmoke; 
     display: inline-block;
     text-align: left;    

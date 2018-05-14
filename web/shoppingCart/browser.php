@@ -48,21 +48,11 @@ if(!isset($_SESSION["dGogglesQ"])){
 
 <div id="header">	
 	<ul>
-        <li><a href="">Home</a></li>
+        <li><a href="browser.php">Home</a></li>
 
-        <li><a href="">CONTACT</a></li>                                              
+        <li><a href="myCart.php">Cart</a></li>                                              
     </ul>		
 </div>
-
-<!-- <div id="sidebar">
-<form method="post" action="c"
-	<h3>CART</h3>
-   <div id="quantity">0</div>
-    <div id="cart">
-    	<span class="empty">No items in cart.</span> 
-    </div>
-</div> 
--->
 
 <div id="grid-selector">
 <div class="cart-icon-bottom">

@@ -40,7 +40,8 @@ session_start();
   echo $firstName;
   echo '! Your items are: ';
   if ($_SESSION["mavicQ"] > 0) {
-    echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["mavicQ"];
+      <br>
+    echo '<span>Mavic Air</span><strong> $399 </strong>' . '  x  ' . $_SESSION["mavicQ"];
 
             
     // echo '<div class="cart-item">';

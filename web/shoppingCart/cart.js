@@ -222,9 +222,9 @@ $(document).ready(function () {
     //		});
     //	});
 
-    function delay (URL) {
-        setTimeout( function() { window.location = URL }, 400 );
-    }
+    // function delay (URL) {
+    //     setTimeout( function() { window.location = URL }, 400 );
+    // }
 
     $('.add_to_cart').click(function () {
         var pQuant = 0;
@@ -245,6 +245,15 @@ $(document).ready(function () {
         setTimeout(function () {
             $("body").addClass("MakeFloatingCart");
         }, 800);
+
+        $(function(){
+            $("a").click(function(evt){
+                var link = $(this).attr("href");
+                setTimeout(function() {
+                    window.location.href = link;
+                }, 500);
+            });
+        });
         setTimeout(function () {
             $('div.floating-cart').remove();
             $("body").removeClass("MakeFloatingCart");

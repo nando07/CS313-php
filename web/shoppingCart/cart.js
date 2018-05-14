@@ -234,12 +234,7 @@ $(document).ready(function () {
         var productName = $(productCard).find('.product_name').get(0).innerHTML;
         var productPrice = $(productCard).find('.product_price').get(0).innerHTML;
 
-               $.post("myCart.php?cartInfo=m");
-
         $("body").append('<div class="floating-cart"></div>');
-
-
-
 
         var cart = $('div.floating-cart');
         productCard.clone().appendTo(cart);

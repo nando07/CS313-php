@@ -41,7 +41,7 @@ session_start();
             echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["mavicQ"];
             echo '<div class="cart-item-border"></div>';
             echo '<div class="delete-item" href="deleteData.php?cartInfo=m"></div></div>';
-            echo '<a href="deleteData.php?cartInfo=m">Delete</a>';
+            echo '<a class="delete-item" href="deleteData.php?cartInfo=m">Delete</a>';
             // echo '<input type="button" value="delete" href="deleteData.php?cartInfo=m"/>';
         }
 

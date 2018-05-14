@@ -40,13 +40,14 @@ session_start();
   echo $firstName;
   echo '! Your items are: ';
   if ($_SESSION["mavicQ"] > 0) {
+    echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["mavicQ"];
 
             
-    echo '<div class="cart-item">';
-    echo '<div class="img-wrap">';
-    echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
-    echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["mavicQ"];
-    echo '<div class="cart-item-border"></div>';
+    // echo '<div class="cart-item">';
+    // echo '<div class="img-wrap">';
+    // echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
+    // echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["mavicQ"];
+    // echo '<div class="cart-item-border"></div>';
    
 }
 

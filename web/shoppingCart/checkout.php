@@ -24,10 +24,10 @@ session_start();
     </ul>		
 </div>
 <form action="confirmation.php" method="post">
-    First Name: <input type="text" name="firstName"> <br>
-    Last Name: <input type="text" name="lastName"> <br>
-    Street Address: <input type="text" name="streetAddress"> <br>
-    City: <input type="text" name="city"><br>
+    First Name: <input type="text" name="firstName"> <br><br>
+    Last Name: <input type="text" name="lastName"> <br><br>
+    Street Address: <input type="text" name="streetAddress"> <br><br>
+    City: <input type="text" name="city"><br><br>
     State: <select name="state">
       <option value="AL">Alabama</option>
       <option value="AK">Alaska</option>
@@ -81,9 +81,9 @@ session_start();
       <option value="WI">Wisconsin</option>
       <option value="WY">Wyoming</option>
     </select>
-    <br>
-    Zip Code <input type="text" name="zip"> <br>
-    Email <input type="email" name="email"><br>
+    <br><br>
+    Zip Code <input type="text" name="zip"> <br><br>
+    Email <input type="email" name="email"><br><br>
     <input type="submit" name="submit">
   </form>
 </div>

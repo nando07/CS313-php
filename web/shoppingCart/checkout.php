@@ -15,7 +15,7 @@ session_start();
     <link rel="stylesheet" href="cart-style.css">
     
 </head>
-<body>
+<body class="f-check">"
 <div id="header">	
 	<ul>
         <li><a href="https://blooming-journey-48310.herokuapp.com/shoppingCart/myCart.php">My Cart</a></li>
@@ -23,7 +23,6 @@ session_start();
         <li><a href="">CHECKOUT</a></li>                                              
     </ul>		
 </div>
-
 <form action="confirmation.php" method="post">
     First Name: <input type="text" name="firstName"> <br>
     Last Name: <input type="text" name="lastName"> <br>
@@ -87,6 +86,7 @@ session_start();
     Email <input type="email" name="email"><br>
     <input type="submit" name="submit">
   </form>
+</div>
     
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

@@ -230,18 +230,11 @@ $(document).ready(function () {
         var productName = $(productCard).find('.product_name').get(0).innerHTML;
         var productPrice = $(productCard).find('.product_price').get(0).innerHTML;
 
-            //    $.post("myCart.php", 
-            //           {img: productImage,
-            //            name: productName,
-            //            price: productPrice
-            //           });
+               $.post("myCart.php?cartInfo=m");
 
         $("body").append('<div class="floating-cart"></div>');
 
 
-        $('#quantity').html(function (i, val) {
-            return val * 1 + 1
-        });
 
 
         var cart = $('div.floating-cart');

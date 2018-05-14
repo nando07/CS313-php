@@ -23,7 +23,7 @@ session_start();
         <li><a href="https://blooming-journey-48310.herokuapp.com/shoppingCart/checkout.php">CHECKOUT</a></li>                                              
     </ul>		
 </div>
-<a href="deleteData.php?cartInfo=m">Delete data</a>
+<a href="deleteData.php?cartInfo=m">Delete</a>
 <div id="cart-body">
 <div id="sidebar">
 <h2>Your Cart</h3>
@@ -41,6 +41,7 @@ session_start();
             echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["mavicQ"];
             echo '<div class="cart-item-border"></div>';
             echo '<div class="delete-item" href="deleteData.php?cartInfo=m"></div></div>';
+            echo '<a href="deleteData.php?cartInfo=m">Delete</a>';
             // echo '<input type="button" value="delete" href="deleteData.php?cartInfo=m"/>';
         }
 

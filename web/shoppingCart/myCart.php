@@ -18,14 +18,14 @@ session_start();
 <body>
 <div id="header">	
 	<ul>
-        <li><a href="">Home</a></li>
+        <li><a href="https://blooming-journey-48310.herokuapp.com/shoppingCart/browser.php">Browse More</a></li>
 
-        <li><a href="">CONTACT</a></li>                                              
+        <li><a href="">CONTINUE</a></li>                                              
     </ul>		
 </div>
 <div id="cart-body">
 <div id="sidebar">
-<h1>Your Cart</h1>
+<h2>Your Cart</h3>
         <div id="cart">
 
 <!-- // $totalQuantity = $_SESSION["mavicQ"] + $_SESSION["sparkQ"] + $_SESSION["ph4Q"] + $_SESSION["mavicQ"] + $_SESSION["ph3Q"] + $_SESSION["inspire2Q"] + $_SESSION["m600Q"] + $_SESSION["m100Q"] + $_SESSION["dGogglesQ"] -->

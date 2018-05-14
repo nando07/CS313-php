@@ -101,9 +101,12 @@ session_start();
                                 echo '<span>DGI Goggles</span><strong> $549 </strong>' . '  x  ' . $_SESSION["dGogglesQ"] . ' = $' . $totalDg;
                                 echo "<br>";                  
                             }
+                             
+                            echo "<br>"; 
+                            echo 'Total = $' . $total; 
                             echo "<br>"; 
                             echo "<br>"; 
-                            echo 'Total = ' . $total; 
+
                             
 
   echo "The items will be sent to: 

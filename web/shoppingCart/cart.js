@@ -251,7 +251,7 @@ $(document).ready(function () {
                 var link = $(this).attr("href");
                 setTimeout(function() {
                     window.location.href = link;
-                }, 500);
+                }, 1500);
             });
         });
         setTimeout(function () {

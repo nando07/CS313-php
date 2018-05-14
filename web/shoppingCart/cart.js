@@ -238,34 +238,21 @@ $(document).ready(function () {
 
         var cart = $('div.floating-cart');
         productCard.clone().appendTo(cart);
-        $(cart).css({
-            'top': position.top + 'px',
-            "left": position.left + 'px'
-        }).fadeIn("slow").addClass('moveToCart');
-        setTimeout(function () {
-            $("body").addClass("MakeFloatingCart");
-        }, 800);
+        // $(cart).css({
+        //     'top': position.top + 'px',
+        //     "left": position.left + 'px'
+        // }).fadeIn("slow").addClass('moveToCart');
+        // setTimeout(function () {
+        //     $("body").addClass("MakeFloatingCart");
+        // }, 800);
         
-        var link = $(this).attr("href");
-        setTimeout(function() {
-            window.location.href = link;
-        }, 500);
         
         setTimeout(function () {
             $('div.floating-cart').remove();
             $("body").removeClass("MakeFloatingCart");
             
-            var id = "?cartInfo=" + $(this).attr('id');
-        
-            // $.post('cartData.php?cartInfo=m');
-
             var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='" + productImage + "' alt='' /></div><span>" + productName + "</span><strong>" + productPrice + "</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";
-            
-            // $.post("myCart.php"
-            // setTimeout(function() {
-            //     var link = $(this).attr("href");
-            //      window.location = link }, 1500);
-
+        
             $("#cart .empty").hide();
             $("#cart").append(cartItem);
             $("#checkout").fadeIn(500);

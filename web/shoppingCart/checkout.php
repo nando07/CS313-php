@@ -23,107 +23,71 @@ session_start();
         <li><a href="">CHECKOUT</a></li>                                              
     </ul>		
 </div>
-<div id="cart-body">
-<div id="sidebar">
-<h2>Your Cart</h3>
-<br><br>
-        <div id="cart">
 
-<!-- // $totalQuantity = $_SESSION["mavicQ"] + $_SESSION["sparkQ"] + $_SESSION["ph4Q"] + $_SESSION["mavicQ"] + $_SESSION["ph3Q"] + $_SESSION["inspire2Q"] + $_SESSION["m600Q"] + $_SESSION["m100Q"] + $_SESSION["dGogglesQ"] -->
-
-
-        <?php
-        if ($_SESSION["mavicQ"] > 0) {
-
-            
-            echo '<div class="cart-item">';
-            echo '<div class="img-wrap">';
-            echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
-            echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["mavicQ"];
-            echo '<div class="cart-item-border"></div>';
-            echo '<div class="delete-item"></div></div>';
-        }
-
-            if ($_SESSION["sparkQ"] > 0) {
-
-            
-                echo '<div class="cart-item">';
-                echo '<div class="img-wrap">';
-                echo '<img src="https://product2.djicdn.com/uploads/photos/34841/medium_960b93a7-044f-49f6-b450-6d57b9afd829.jpg" alt="spark" /></div>';
-                echo '<span>Spark</span><strong>$399</strong>' . '  x  ' . $_SESSION["sparkQ"];
-                echo '<div class="cart-item-border"></div>';
-                echo '<div class="delete-item"></div></div>';
-            }
-
-                if ($_SESSION["ph4Q"] > 0) {
-
-            
-                    echo '<div class="cart-item">';
-                    echo '<div class="img-wrap">';
-                    echo '<img src="https://product2.djicdn.com/uploads/photos/34734/medium_baada688-b74f-4bee-9a2d-9ff2e9782b7d.jpg" alt="ph4" /></div>';
-                    echo '<span>Phantom 4</span><strong>$399</strong>' . '  x  ' . $_SESSION["ph4Q"];
-                    echo '<div class="cart-item-border"></div>';
-                    echo '<div class="delete-item"></div></div>';
-                }
-
-                    if ($_SESSION["ph3Q"] > 0) {
-
-            
-                        echo '<div class="cart-item">';
-                        echo '<div class="img-wrap">';
-                        echo '<img src="https://product2.djicdn.com/uploads/photos/6711/medium_P3C_01.jpg" alt="ph3" /></div>';
-                        echo '<span>Phantom 3</span><strong>$399</strong>' . '  x  ' . $_SESSION["ph3Q"];
-                        echo '<div class="cart-item-border"></div>';
-                        echo '<div class="delete-item"></div></div>';
-                    }
-
-                        if ($_SESSION["inspire2Q"] > 0) {
-
-            
-                            echo '<div class="cart-item">';
-                            echo '<div class="img-wrap">';
-                            echo '<img src="https://product1.djicdn.com/uploads/photos/405/medium_9351802d-9e88-4bb6-979c-48fe81748a33.png" alt="in2" /></div>';
-                            echo '<span>Inspire 2</span><strong>$399</strong>' . '  x  ' . $_SESSION["inspire2Q"];
-                            echo '<div class="cart-item-border"></div>';
-                            echo '<div class="delete-item"></div></div>';
-                        }
-
-                            if ($_SESSION["m600Q"] > 0) {
-
-            
-                                echo '<div class="cart-item">';
-                                echo '<div class="img-wrap">';
-                                echo '<img src="https://product4.djicdn.com/uploads/photos/260/medium_f013bf4e-ba1d-4833-88b3-2d3ba62251dd.jpg" alt="m600" /></div>';
-                                echo '<span>Matrice 600</span><strong>$399</strong>' . '  x  ' . $_SESSION["m600Q"];
-                                echo '<div class="cart-item-border"></div>';
-                                echo '<div class="delete-item"></div></div>';
-                            }
-
-                                if ($_SESSION["m100Q"] > 0) {
-
-            
-                                    echo '<div class="cart-item">';
-                                    echo '<div class="img-wrap">';
-                                    echo '<img src="https://product2.djicdn.com/uploads/photos/3521/medium_p1.jpg" alt="m100" /></div>';
-                                    echo '<span>Matrice 100</span><strong>$399</strong>' . '  x  ' . $_SESSION["m100Q"];
-                                    echo '<div class="cart-item-border"></div>';
-                                    echo '<div class="delete-item"></div></div>';
-                                }
-
-                                    if ($_SESSION["dGogglesQ"] > 0) {
-
-            
-                                        echo '<div class="cart-item">';
-                                        echo '<div class="img-wrap">';
-                                        echo '<img src="https://product1.djicdn.com/uploads/photos/33591/medium_64d4667d-431c-4285-9675-2dfe75f7404d.jpg" alt="dG" /></div>';
-                                        echo '<span>DJI Goggles</span><strong>$399</strong>' . '  x  ' . $_SESSION["dGogglesQ"];
-                                        echo '<div class="cart-item-border"></div>';
-                                        echo '<div class="delete-item"></div></div>';
-                                    }
-        ?>
-        </div>
-        </div>
-        </div>
+<form action="confirmation.php" method="post">
+    First Name: <input type="text" name="firstName"> <br>
+    Last Name: <input type="text" name="lastName"> <br>
+    Street Address: <input type="text" name="streetAddress"> <br>
+    City: <input type="text" name="city"><br>
+    State: <select name="state">
+      <option value="AL">Alabama</option>
+      <option value="AK">Alaska</option>
+      <option value="AZ">Arizona</option>
+      <option value="AR">Arkansas</option>
+      <option value="CA">California</option>
+      <option value="CO">Colorado</option>
+      <option value="CT">Connecticut</option>
+      <option value="DE">Delaware</option>
+      <option value="DC">District Of Columbia</option>
+      <option value="FL">Florida</option>
+      <option value="GA">Georgia</option>
+      <option value="HI">Hawaii</option>
+      <option value="ID">Idaho</option>
+      <option value="IL">Illinois</option>
+      <option value="IN">Indiana</option>
+      <option value="IA">Iowa</option>
+      <option value="KS">Kansas</option>
+      <option value="KY">Kentucky</option>
+      <option value="LA">Louisiana</option>
+      <option value="ME">Maine</option>
+      <option value="MD">Maryland</option>
+      <option value="MA">Massachusetts</option>
+      <option value="MI">Michigan</option>
+      <option value="MN">Minnesota</option>
+      <option value="MS">Mississippi</option>
+      <option value="MO">Missouri</option>
+      <option value="MT">Montana</option>
+      <option value="NE">Nebraska</option>
+      <option value="NV">Nevada</option>
+      <option value="NH">New Hampshire</option>
+      <option value="NJ">New Jersey</option>
+      <option value="NM">New Mexico</option>
+      <option value="NY">New York</option>
+      <option value="NC">North Carolina</option>
+      <option value="ND">North Dakota</option>
+      <option value="OH">Ohio</option>
+      <option value="OK">Oklahoma</option>
+      <option value="OR">Oregon</option>
+      <option value="PA">Pennsylvania</option>
+      <option value="RI">Rhode Island</option>
+      <option value="SC">South Carolina</option>
+      <option value="SD">South Dakota</option>
+      <option value="TN">Tennessee</option>
+      <option value="TX">Texas</option>
+      <option value="UT">Utah</option>
+      <option value="VT">Vermont</option>
+      <option value="VA">Virginia</option>
+      <option value="WA">Washington</option>
+      <option value="WV">West Virginia</option>
+      <option value="WI">Wisconsin</option>
+      <option value="WY">Wyoming</option>
+    </select>
+    <br>
+    Zip Code <input type="text" name="zip"> <br>
+    Email <input type="email" name="email"><br>
+    <input type="submit" name="submit">
+  </form>
+    
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="cart.js"></script>

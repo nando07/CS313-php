@@ -90,9 +90,8 @@ text-align: center;
 #sidebar{
 	position: absolute;
 	z-index: 15;
-	top: 30px;
+	top: 100px;
 	left: 50%;
-	margin: -100px 0 0 -150px;
 	background-color: whitesmoke;
 	width:500px;	
 	padding:13px 0 0 45px;

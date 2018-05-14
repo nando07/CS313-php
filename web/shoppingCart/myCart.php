@@ -40,7 +40,7 @@ session_start();
             echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
             echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["mavicQ"];
             echo '<div class="cart-item-border"></div>';
-            echo '<div class="delete-item" href="deleteData.php?cartInfo=m"></div><a class="delete" href="deleteData.php?cartInfo=m">Delete</a></div>';
+            echo '<div class="delete-item" href="deleteData.php?cartInfo=m"></div><a class="delete-item" href="deleteData.php?cartInfo=m">Delete</a></div>';
             echo '<a class="delete" href="deleteData.php?cartInfo=m">Delete</a>';
             // echo '<input type="button" value="delete" href="deleteData.php?cartInfo=m"/>';
         }

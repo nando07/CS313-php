@@ -41,64 +41,70 @@ session_start();
   echo '! Your items are: ';
   echo "<br>";
   echo "<br>";
+  $totalM  = $_SESSION["mavicQ"] * 399;
+  $totalS  = $_SESSION["sparkQ"] * 399;
+  $totalPh4  = $_SESSION["ph4Q"] * 1499;
+  $totalPh3  = $_SESSION["ph3Q"] * 499;
+  $totalI2  = $_SESSION["inspire2Q"] * 2999;
+  $totalM600  = $_SESSION["m600Q"] * 4999;
+  $totalM100  = $_SESSION["m100Q"] * 3299;
+  $totalDg  = $_SESSION["dGogglesQ"] * 549;
+  $total = $totalM + $totalS + $totalPh4 + $totalPh3 + $totalI2 + $totalM600 + $totalM100 + $totalDg;
+
   if ($_SESSION["mavicQ"] > 0) {
       
-    echo '<span>Mavic Air</span><strong> $399 </strong>' . '  x  ' . $_SESSION["mavicQ"] . ' = $' . ( $_SESSION["mavicQ"] * 399);
+    echo '<span>Mavic Air</span><strong> $399 </strong>' . '  x  ' . $_SESSION["mavicQ"] . ' = $' . $totalM;
 
-    echo "<br>";
-
-            
-    // echo '<div class="cart-item">';
-    // echo '<div class="img-wrap">';
-    // echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
-    // echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["mavicQ"];
-    // echo '<div class="cart-item-border"></div>';
-   
+    echo "<br>"; 
 }
 
     if ($_SESSION["sparkQ"] > 0) {
 
-        echo '<span>Spark Air</span><strong> $399 </strong>' . '  x  ' . $_SESSION["sparkQ"] . ' = $' . ( $_SESSION["sparkQ"] * 399);
+        echo '<span>Spark Air</span><strong> $399 </strong>' . '  x  ' . $_SESSION["sparkQ"] . ' = $' . $totalS;
         echo "<br>";    
     }
 
         if ($_SESSION["ph4Q"] > 0) {
 
-            echo '<spaPhantom 4</span><strong> $1,499 </strong>' . '  x  ' . $_SESSION["ph4Q"] . ' = $' . ( $_SESSION["ph4Q"] * 1499);
+            echo '<span>Phantom 4</span><strong> $1,499 </strong>' . '  x  ' . $_SESSION["ph4Q"] . ' = $' . $totalPh4;
             echo "<br>";           
         }
 
             if ($_SESSION["ph3Q"] > 0) {
 
     
-                echo '<span>Phantom 3</span><strong> $499 </strong>' . '  x  ' . $_SESSION["ph3Q"] . ' = $' . ( $_SESSION["ph3Q"] * 499);
+                echo '<span>Phantom 3</span><strong> $499 </strong>' . '  x  ' . $_SESSION["ph3Q"] . ' = $' . $totalPh3;
         echo "<br>";   
             }
 
                 if ($_SESSION["inspire2Q"] > 0) {
 
-                    echo '<span>Inspire 2</span><strong> $2,999 </strong>' . '  x  ' . $_SESSION["inspire2Q"] . ' = $' . ( $_SESSION["inspire2Q"] * 2999);
+                    echo '<span>Inspire 2</span><strong> $2,999 </strong>' . '  x  ' . $_SESSION["inspire2Q"] . ' = $' . $totalI2;
         echo "<br>";  
                
                 }
 
                     if ($_SESSION["m600Q"] > 0) {
 
-                        echo '<span>Inspire 2</span><strong> $4,999 </strong>' . '  x  ' . $_SESSION["m600Q"] . ' = $' . ( $_SESSION["m600Q"] * 4999);
+                        echo '<span>Inspire 2</span><strong> $4,999 </strong>' . '  x  ' . $_SESSION["m600Q"] . ' = $' . $totalM600;
         echo "<br>";
                       
                     }
 
                         if ($_SESSION["m100Q"] > 0) {
 
-                            echo '<span>Matrice 100</span><strong> $3,299 </strong>' . '  x  ' . $_SESSION["m100Q"] . ' = $' . ( $_SESSION["m100Q"] * 3299);
+                            echo '<span>Matrice 100</span><strong> $3,299 </strong>' . '  x  ' . $_SESSION["m100Q"] . ' = $' . $totalM100;
         echo "<br>";                        
                         }
 
                             if ($_SESSION["dGogglesQ"] > 0) {
-                                echo '<span>DGI Goggles</span><strong> $549 </strong>' . '  x  ' . $_SESSION["dGogglesQ"] . ' = $' . ( $_SESSION["dGogglesQ"] * 549);
+                                echo '<span>DGI Goggles</span><strong> $549 </strong>' . '  x  ' . $_SESSION["dGogglesQ"] . ' = $' . $totalDg;
                                 echo "<br>";                  
                             }
+                            echo "<br>"; 
+                            echo "<br>"; 
+                            echo 'Total = ' . $total; 
+
   echo "They will arrive to you shortly at the following address:
    $streetAddress $city $state $zip";
    ?>

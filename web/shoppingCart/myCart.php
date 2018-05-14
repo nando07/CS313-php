@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,32 +23,32 @@
         <li><a href="">CONTACT</a></li>                                              
     </ul>		
 </div>
-    <div id="sidebar">
-<!--<form method="post" action="c"-->
-	<h3>CART</h3>
-    <div id="cart">
-    <?php
-// Start the session
-session_start();
+<div id="cart-body">
 
-array_push($_SESSION['cart'], $_POST['item']);
-$trimmedArray = array_map('trim', $_SESSION['cart']);
-$emptyRemoved = array_filter($_SESSION['cart']);
+<h1>Your Cart</h1>
+<div id="sidebar">
+        <div id="cart">
 
-foreach($emptyRemoved as $result) {
-    echo $result, '<br />';
-}
+$totalQuantity = $_SESSION["mavicQ"] + $_SESSION["sparkQ"] + $_SESSION["ph4Q"] + $_SESSION["mavicQ"] + $_SESSION["ph3Q"] + $_SESSION["inspire2Q"] + $_SESSION["m600Q"] + $_SESSION["m100Q"] + $_SESSION["dGogglesQ"]
 
-// echo "Number of Items in the cart = ".sizeof($_SESSION['cart'])." <a href=cart-remove-all.php>Remove all</a><br>";
-// echo '<pre>'; 
-// print_r($emptyRemoved); 
-// echo '</pre>';
-// 
-?>
 
-    	<span class="empty">No items in cart.</span>       
-    </div>
+        <?php
+        if ($_SESSION["mavicQ"] > 0) {
+
+        
+            echo '<div class='cart-item'>
+                <div class='img-wrap'><img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt='mavicAir' /></div>
+                <span>Mavic Air</span><strong>"$399"</strong>
+                <div class='cart-item-border'></div>
+                <div class='delete-item'></div>
+            </div>';
+        }
+            <span class="empty">No items in cart.</span>
+        </div>
 </div>
+
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="cart.js"></script>
 </body>

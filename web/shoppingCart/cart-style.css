@@ -840,7 +840,7 @@ body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}
 	overflow:hidden;
 	border:1px solid #edeff0;
 	float:left;
-	margin-left:-65px;	
+	/* margin-left:-65px;	 */
 }
 .cart-item img{width:100%; position:relative;top:-10px;}
 .cart-item strong{color:#00c4ff; font-size:16px;}

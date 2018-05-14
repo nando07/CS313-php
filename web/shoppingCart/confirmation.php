@@ -104,8 +104,9 @@ session_start();
                             echo "<br>"; 
                             echo "<br>"; 
                             echo 'Total = ' . $total; 
+                            
 
-  echo "They will arrive to you shortly at the following address:
+  echo "The items will be sent to: 
    $streetAddress $city $state $zip";
    ?>
 

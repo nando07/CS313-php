@@ -86,7 +86,7 @@ echo $totalQuantity;
                 <div class="shadow"></div>
                 <img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="" />
                 <div class="image_overlay"></div>
-                <a class="add_to_cart" href="cardData.php?cartInfo=m">Add to cart</a>
+                <a class="add_to_cart" href="cartData.php?cartInfo=m">Add to cart</a>
 <!--                <div class="view_gallery">View gallery</div>                -->
                 <div class="stats">        	
                     <div class="stats-container">
@@ -115,7 +115,7 @@ echo $totalQuantity;
                 <div class="shadow"></div>
                 <img src="https://product2.djicdn.com/uploads/photos/34841/medium_960b93a7-044f-49f6-b450-6d57b9afd829.jpg" alt="" />
                 <div class="image_overlay"></div>
-                <a class="add_to_cart" href="cardData.php?cartInfo=s">Add to cart</a>
+                <a class="add_to_cart" href="cartData.php?cartInfo=s">Add to cart</a>
 <!--                <div class="view_gallery">View gallery</div>-->
                 <div class="stats">        	
                     <div class="stats-container">
@@ -143,7 +143,7 @@ echo $totalQuantity;
                 <div class="shadow"></div>
                 <img src="https://product2.djicdn.com/uploads/photos/34734/medium_baada688-b74f-4bee-9a2d-9ff2e9782b7d.jpg" alt="" />
                 <div class="image_overlay"></div>
-                <a class="add_to_cart" href="cardData.php?cartInfo=ph4">Add to cart</a>
+                <a class="add_to_cart" href="cartData.php?cartInfo=ph4">Add to cart</a>
 <!--                <div class="view_gallery">View gallery</div>-->
                 <div class="stats">        	
                     <div class="stats-container">
@@ -172,7 +172,7 @@ echo $totalQuantity;
                 <div class="shadow"></div>
                 <img src="https://product2.djicdn.com/uploads/photos/6711/medium_P3C_01.jpg" alt="" />
                 <div class="image_overlay"></div>
-                <a class="add_to_cart" href="cardData.php?cartInfo=ph3">Add to cart</a>
+                <a class="add_to_cart" href="cartData.php?cartInfo=ph3">Add to cart</a>
 <!--                <div class="view_gallery">View gallery</div>-->
                 <div class="stats">        	
                     <div class="stats-container">
@@ -200,7 +200,7 @@ echo $totalQuantity;
                 <div class="shadow"></div>
                 <img src="https://product1.djicdn.com/uploads/photos/405/medium_9351802d-9e88-4bb6-979c-48fe81748a33.png" alt="" />
                 <div class="image_overlay"></div>
-                <a class="add_to_cart" href="cardData.php?cartInfo=in2">Add to cart</a>
+                <a class="add_to_cart" href="cartData.php?cartInfo=in2">Add to cart</a>
 <!--                <div class="view_gallery">View gallery</div>-->
                 <div class="stats">        	
                     <div class="stats-container">
@@ -229,7 +229,7 @@ echo $totalQuantity;
                 <div class="shadow"></div>
                 <img src="https://product4.djicdn.com/uploads/photos/260/medium_f013bf4e-ba1d-4833-88b3-2d3ba62251dd.jpg" alt="" />
                 <div class="image_overlay"></div>
-                <a class="add_to_cart" href="cardData.php?cartInfo=m600">Add to cart</a>
+                <a class="add_to_cart" href="cartData.php?cartInfo=m600">Add to cart</a>
 <!--                <div class="view_gallery">View gallery</div>-->
                 <div class="stats">        	
                     <div class="stats-container">
@@ -257,7 +257,7 @@ echo $totalQuantity;
                 <div class="shadow"></div>
                 <img src="https://product2.djicdn.com/uploads/photos/3521/medium_p1.jpg" alt="" />
                 <div class="image_overlay"></div>
-                <a class="add_to_cart" href="cardData.php?cartInfo=m100">Add to cart</a>
+                <a class="add_to_cart" href="cartData.php?cartInfo=m100">Add to cart</a>
 <!--                <div class="view_gallery">View gallery</div>-->
                 <div class="stats">        	
                     <div class="stats-container">
@@ -285,7 +285,7 @@ echo $totalQuantity;
                 <div class="shadow"></div>
                 <img src="https://product1.djicdn.com/uploads/photos/33591/medium_64d4667d-431c-4285-9675-2dfe75f7404d.jpg" alt="" />
                 <div class="image_overlay"></div>
-                <a class="add_to_cart" href="cardData.php?cartInfo=dg">Add to cart</a>
+                <a class="add_to_cart" href="cartData.php?cartInfo=dg">Add to cart</a>
 <!--                <div class="view_gallery">View gallery</div>-->
                 <div class="stats">        	
                     <div class="stats-container">

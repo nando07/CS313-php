@@ -19,7 +19,7 @@ $_SESSION['cart']= [];
 
 
 <div class="cart-icon-bottom">
-<a href="myCart.php"><i class="fas fa-cart-plus fa-3x"></i></a>
+<a href="myCart.php"><i class="fas fa-cart-plus fa-1x"></i></a>
 <div id="quantity">0</div>
 </div>
 

@@ -169,7 +169,37 @@
                             </div>
                             <div id="collapse-C" class="collapse" role="tabpanel" aria-labelledby="heading-C">
                                 <div class="card-body">
-                                    Coming Soon...
+                                <div id="t1" class="work-tab">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <img src="https://www.charge.com/wp-content/uploads/2015/12/cart.png" alt="cart">
+
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="tab-backg">
+                                                        <h2>02</h2>
+                                                        <h3>Shopping Cart</h3>
+                                                        <p>This week I created this Shopping cart simulation to practice php sessions.
+                                                        </p>
+                                                        <div id="link-btns">
+                                                            <div id="work-btn-heroku">
+                                                                <a class="btn btn-general btn-work-1" href="https://blooming-journey-48310.herokuapp.com/shoppingCart/browser.php" target="_blank" title="Show Work" role="button">Heroku</a>
+                                                            </div>
+                                                            <div id="work-btn-github">
+                                                                <a class="btn btn-general btn-work-2" href="https://github.com/nando07/CS313-php/tree/master/web/shoppingCart" target="_blank" title="Show Work" role="button">GitHub</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

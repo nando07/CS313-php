@@ -11,7 +11,13 @@
     
 </head>
 <body>
-    <h1>Your Cart</h1>
+<div id="header">	
+	<ul>
+        <li><a href="">Home</a></li>
+
+        <li><a href="">CONTACT</a></li>                                              
+    </ul>		
+</div>
     <div id="sidebar">
 <!--<form method="post" action="c"-->
 	<h3>CART</h3>

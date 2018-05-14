@@ -43,6 +43,7 @@ text-align: center;
 	height: 100px;
 	width: 100%;
 	padding: 40px 0px 0px 30px;
+	text-align: center;
 }
 #grid-selector h2 {
     font-size: 25px;
@@ -799,7 +800,7 @@ div.cart-icon-bottom{
 	height:19px;
 	z-index:1;
 	top: 143px;
-	left: 90px;
+	left: 65px;
 }
 body.MakeFloatingCart div.cart-icon-top{z-index:30;}
 body.MakeFloatingCart div.cart-icon-bottom{z-index:300;}	

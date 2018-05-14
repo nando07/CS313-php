@@ -19,8 +19,8 @@ $_SESSION['cart']= [];
 
 
 <div class="cart-icon-bottom">
-<i class="fas fa-cart-plus fa-1x"></i>
-
+<a href="myCart.php"><i class="fas fa-cart-plus fa-3x"></i></a>
+<div id="quantity">0</div>
 </div>
 
 
@@ -36,14 +36,15 @@ $_SESSION['cart']= [];
     </ul>		
 </div>
 
-<div id="sidebar">
-<!--<form method="post" action="c"-->
+<!-- <div id="sidebar">
+<form method="post" action="c"
 	<h3>CART</h3>
    <div id="quantity">0</div>
     <div id="cart">
     	<span class="empty">No items in cart.</span> 
     </div>
-</div>
+</div> 
+-->
 
 <div id="grid-selector">
 <h2>THE BEST DRONES</h2>

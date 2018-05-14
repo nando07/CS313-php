@@ -119,7 +119,7 @@ session_start();
                                         echo '<div class="delete-item"></div></div>';
                                     }
         ?>
-        <input type="button" value="delete" href="deleteData.php?cartInfo=m"/>
+        <a class="add_to_cart" href="deleteData.php?cartInfo=m">Delete data</a>
         </div>
         </div>
         </div>

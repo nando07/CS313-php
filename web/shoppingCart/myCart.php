@@ -42,7 +42,85 @@ session_start();
             echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["mavicQ"];
             echo '<div class="cart-item-border"></div>';
             echo '<div class="delete-item"></div></div>';
-        }?>
+        }
+
+            if ($_SESSION["sparkQ"] > 0) {
+
+            
+                echo '<div class="cart-item">';
+                echo '<div class="img-wrap">';
+                echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
+                echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["sparkQ"];
+                echo '<div class="cart-item-border"></div>';
+                echo '<div class="delete-item"></div></div>';
+            }
+
+                if ($_SESSION["ph4Q"] > 0) {
+
+            
+                    echo '<div class="cart-item">';
+                    echo '<div class="img-wrap">';
+                    echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
+                    echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["ph4Q"];
+                    echo '<div class="cart-item-border"></div>';
+                    echo '<div class="delete-item"></div></div>';
+                }
+
+                    if ($_SESSION["ph3Q"] > 0) {
+
+            
+                        echo '<div class="cart-item">';
+                        echo '<div class="img-wrap">';
+                        echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
+                        echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["ph3Q"];
+                        echo '<div class="cart-item-border"></div>';
+                        echo '<div class="delete-item"></div></div>';
+                    }
+
+                        if ($_SESSION["inspire2Q"] > 0) {
+
+            
+                            echo '<div class="cart-item">';
+                            echo '<div class="img-wrap">';
+                            echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
+                            echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["inspire2Q"];
+                            echo '<div class="cart-item-border"></div>';
+                            echo '<div class="delete-item"></div></div>';
+                        }
+
+                            if ($_SESSION["m600Q"] > 0) {
+
+            
+                                echo '<div class="cart-item">';
+                                echo '<div class="img-wrap">';
+                                echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
+                                echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["m600Q"];
+                                echo '<div class="cart-item-border"></div>';
+                                echo '<div class="delete-item"></div></div>';
+                            }
+
+                                if ($_SESSION["m100Q"] > 0) {
+
+            
+                                    echo '<div class="cart-item">';
+                                    echo '<div class="img-wrap">';
+                                    echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
+                                    echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["m100Q"];
+                                    echo '<div class="cart-item-border"></div>';
+                                    echo '<div class="delete-item"></div></div>';
+                                }
+
+                                    if ($_SESSION["dGogglesQ"] > 0) {
+
+            
+                                        echo '<div class="cart-item">';
+                                        echo '<div class="img-wrap">';
+                                        echo '<img src="https://product2.djicdn.com/uploads/photos/33967/medium_a7f3e87a-e907-4eef-8755-4a704155b682.jpg" alt="mavicAir" /></div>';
+                                        echo '<span>Mavic Air</span><strong>$399</strong>' . '  x  ' . $_SESSION["dGogglesQ"];
+                                        echo '<div class="cart-item-border"></div>';
+                                        echo '<div class="delete-item"></div></div>';
+                                    }
+        ?>
         </div>
         </div>
         </div>

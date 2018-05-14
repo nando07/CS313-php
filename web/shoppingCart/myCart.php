@@ -26,6 +26,7 @@ session_start();
 <div id="cart-body">
 <div id="sidebar">
 <h2>Your Cart</h3>
+<a class="add_to_cart" href="deleteData.php?cartInfo=m">Delete data</a>
 <br><br>
         <div id="cart">
 
@@ -119,7 +120,6 @@ session_start();
                                         echo '<div class="delete-item"></div></div>';
                                     }
         ?>
-        <a class="add_to_cart" href="deleteData.php?cartInfo=m">Delete data</a>
         </div>
         </div>
         </div>

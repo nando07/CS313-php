@@ -223,7 +223,7 @@ $(document).ready(function () {
     //	});
 
     function delay (URL) {
-        setTimeout( function() { window.location = URL }, 900 );
+        setTimeout( function() { window.location = URL }, 400 );
     }
 
     $('.add_to_cart').click(function () {

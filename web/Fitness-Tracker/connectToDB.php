@@ -26,10 +26,10 @@ foreach ($db->query('SELECT username, password FROM workout.user') as $row)
 $statement = $db->query('SELECT date, id FROM workout.session');
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-  echo 'date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
+  echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
 }
 
-$stmt = $db->prepare("SELECT * FROM workout.session WHERE $user_id=:user_id");
-$stmt->execute(array(":user_id" => $user_id));
-$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// $stmt = $db->prepare("SELECT * FROM workout.session WHERE $user_id=:user_id");
+// $stmt->execute(array(":user_id" => $user_id));
+// $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>

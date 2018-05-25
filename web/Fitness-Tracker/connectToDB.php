@@ -23,7 +23,7 @@ foreach ($db->query('SELECT username, password FROM workout.user') as $row)
   echo '<br/>';
 }
 
-$statement = $db->query('SELECT date, id FROM workout_session');
+$statement = $db->query('SELECT date, id FROM workout.session');
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
   echo 'date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';

@@ -29,4 +29,8 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
   echo 'date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
 }
 
+$stmt = $db->prepare('SELECT * FROM workout.user WHERE id=:id AND username=:username');
+$stmt->execute(array(':id' => $id, ':username' => $username));
+$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?>

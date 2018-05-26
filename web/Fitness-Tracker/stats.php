@@ -6,7 +6,7 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-
+<h1>YOUR STATISTICS</h1>
 	<?php 
 
 		require_once('connectToDB.php');
@@ -43,7 +43,7 @@
 	?>
 
 	<div class="container">
-	<h1>Push-ups</h1>
+	<h3>Push-ups</h3>
 	<div class="row">
 	<table class="table table-striped">
 	<thead>

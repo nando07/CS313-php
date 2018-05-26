@@ -95,9 +95,17 @@
 			</tr>
 			</thead>
 			<tbody>
-			<tr>
-			<td><td>
-			</tr>
+			<?php 
+			$statement = $db->query("SELECT date, username, standard, reverse, twisting, tuck                                                                              
+			FROM workout.session, workout.user, workout.crunches      
+			WHERE workout.session.user_id = workout.user.id                  
+			AND workout.session.crunches_id = workout.crunches.id                                                      
+		    AND workout.user.username = '$username'");
+			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+			{
+			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['standard'] . '</td>' . '<td>' . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' . $row['tuck'] . '</td></tr>';
+			}
+			?>
 			</tbody>
 			</table>
 			</div>

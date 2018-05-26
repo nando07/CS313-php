@@ -26,13 +26,13 @@
       </div>
 
       <div class="form-label-group">
-        <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputEmail">Username</label>
+        <input type="text" id="inputEmail" class="form-control"   name="username" placeholder="Email address" required autofocus>
+        <label for="inputEmail">username</label>
       </div>
 
       <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <label for="inputPassword">Password</label>
+        <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
+        <label for="inputPassword">password</label>
       </div>
 
       <div class="checkbox mb-3">

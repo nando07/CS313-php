@@ -10,9 +10,9 @@
 		require_once('connectToDB.php');
 		
 		// get from form
-		if (isset($_POST['Username']) && isset($_POST['Password'])){
-			$username = $_POST['Username'];
-            $password = $_POST['Password'];
+		if (isset($_POST['username']) && isset($_POST['password'])){
+			$username = $_POST['username'];
+            $password = $_POST['password'];
 		}
 		
 

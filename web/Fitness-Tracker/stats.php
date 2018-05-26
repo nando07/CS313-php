@@ -81,9 +81,9 @@
 	<tr>
 			<th>Date</th>
 			<th>Standard</th>
-			<th>Wide</th>
-			<th>Army</th>
-			<th>Incline</th>
+			<th>Reverse</th>
+			<th>Twisting</th>
+			<th>Tuck</th>
 			</tr>
 			</thead>
 			<tbody>

@@ -27,8 +27,8 @@
 
 				foreach ($db->query('SELECT username, password FROM workout.user') as $row)
 				{
-				  echo 'user: ' . $row['username'];
-				  echo ' password: ' . $row['password'];
+				  echo '<div class="container"><p>user: ' . $row['username'] . '</p>' . '<p>passowrd: ' . $row['password'] . '</p></div>';
+				//   echo ' password: ' . $row['password'];
 				  echo '<br/>';
 				}
 				

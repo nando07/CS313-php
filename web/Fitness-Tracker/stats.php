@@ -58,6 +58,7 @@
 	<thead>
 	<tr>
 			<th>Date</th>
+			<th>Username</th>
 			<th>Standard</th>
 			<th>Wide</th>
 			<th>Army</th>
@@ -73,7 +74,7 @@
 		    AND workout.user.username = '$username'");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
-			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['standard'] . '</td>' . '<td>' . $row['wide'] . '</td>' . '<td>' . $row['army'] . '</td>' . '<td>' . $row['incline'] . '</td></tr>';
+			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] . '<td>' . $row['standard'] . '</td>' . '<td>' . $row['wide'] . '</td>' . '<td>' . $row['army'] . '</td>' . '<td>' . $row['incline'] . '</td></tr>';
 			}
 			?>
 			</tbody>
@@ -88,6 +89,7 @@
 	<thead>
 	<tr>
 			<th>Date</th>
+			<th>Username</th>
 			<th>Standard</th>
 			<th>Reverse</th>
 			<th>Twisting</th>
@@ -103,7 +105,7 @@
 		    AND workout.user.username = '$username'");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
-			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['standard'] . '</td>' . '<td>' . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' . $row['tuck'] . '</td></tr>';
+			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] . '</td>' .'<td>' . $row['standard'] . '</td>' . '<td>' . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' . $row['tuck'] . '</td></tr>';
 			}
 			?>
 			</tbody>

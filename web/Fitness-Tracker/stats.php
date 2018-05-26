@@ -9,6 +9,7 @@
 
 		require_once('connectToDB.php');
 		
+		// select exists(select 1 from contact where id=12)
 		// get from form
 		if (isset($_POST['username']) && isset($_POST['password'])){
 			$username = $_POST['username'];
@@ -19,7 +20,11 @@
 		if ($username){
 			echo $username . "<br />";
             echo $password . "<br />";	
-            
+			
+			$valid = ($db->query('SELECT 1 FROM workout.user WHERE username=$username'));
+
+			echo $valid;
+
             foreach ($db->query('SELECT username, password FROM workout.user') as $row)
 {
   echo 'user: ' . $row['username'];

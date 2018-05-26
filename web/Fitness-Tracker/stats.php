@@ -73,7 +73,7 @@
 		    AND workout.user.username = '$username'");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
-			  echo '<tr><td>' . $row['date'] . '</td></tr>';
+			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['standard'] . '</td>' . '<td>' . $row['wide'] . '</td>' . '<td>' . $row['army'] . '</td>' . '<td>' . $row['incline'] . '</td></tr>';
 			}
 			?>
 			</tbody>

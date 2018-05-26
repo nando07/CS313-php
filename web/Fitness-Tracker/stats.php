@@ -25,7 +25,13 @@
 			$query = $db->query("SELECT username FROM workout.user AS u WHERE u.username = '$username'");
 			
 			$nice = $query->fetch(PDO::FETCH_ASSOC);
-			echo $nice['username'];
+
+			if ($nice['username'] == $username) {
+				echo 'user exists!';
+			} else {
+				echo 'user does not exist';
+			}
+			// echo $nice['username'];
 		//$results = pg_query($query) or die('Query Failed '. preg_last_error());	
 			
 		// $myRow = pg_fetch_assoc($results);

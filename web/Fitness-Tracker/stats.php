@@ -65,9 +65,13 @@
 			</tr>
 			</thead>
 			<tbody>
-			<tr>
-			<td><td>
-			</tr>
+			<?php 
+			$statement = $db->query('SELECT date, id FROM workout.session');
+			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+			{
+			  echo '<tr><td>' . $row['date'] . '</td></tr>';
+			}
+			?>
 			</tbody>
 			</table>
 			</div>

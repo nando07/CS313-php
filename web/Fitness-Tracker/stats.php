@@ -21,7 +21,7 @@
 			echo $username . "<br />";
             echo $password . "<br />";	
 			
-			$valid = ($db->query("SELECT 1 FROM workout.user WHERE workout.user.username='$username'"));
+			$valid = ($db->query("SELECT 1 FROM workout.user WHERE username='$username'"));
 
 			echo $valid;
 

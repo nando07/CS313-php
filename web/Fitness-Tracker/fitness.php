@@ -74,8 +74,8 @@
                   <p class="card-text">Strengthening your entire core is not only crucial for sculpting a flat stomach, but these muscles also provide support for the entire body in everyday movements, reduce back pain, and improve posture.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <a href="form.php" class="btn btn-sm btn-outline-secondary" >View</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary" >Edit</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -89,8 +89,8 @@
                   <p class="card-text">By working on a large number of muscles in your body, push-ups help tremendously for a fitter you. Push-ups help you focus on your arms, abs and your lower body, all at the same time.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <a href="form.php" class="btn btn-sm btn-outline-secondary" >View</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary" >Edit</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>
@@ -105,8 +105,8 @@
                   <p class="card-text">Running Is a Killer Leg Workout. Your body's biggest muscles are all in your legs, and running benefits all of them: your inner and outer thighs, your gluteus maximus, quads, hamstrings, and calves.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <a href="form.php" class="btn btn-sm btn-outline-secondary" >View</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary" >Edit</a>
                     </div>
                     <small class="text-muted">9 mins</small>
                   </div>

@@ -73,6 +73,27 @@
 			</div>
 			</div>
 
+<div class="container">
+	<h1>Crunches</h1>
+	<div class="row">
+	<table class="table table-striped">
+	<thead>
+	<tr>
+			<th>Date</th>
+			<th>Standard</th>
+			<th>Wide</th>
+			<th>Army</th>
+			<th>Incline</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td><td>
+			</tr>
+			</tbody>
+			</table>
+			</div>
+			</div>
 
 
 

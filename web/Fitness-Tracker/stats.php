@@ -66,7 +66,11 @@
 			</thead>
 			<tbody>
 			<?php 
-			$statement = $db->query('SELECT date, id FROM workout.session');
+			$statement = $db->query("SELECT date, username, standard, wide, army, incline                                                                              
+			FROM workout.session, workout.user, workout.pushups      
+			WHERE workout.session.user_id = workout.user.id                  
+			AND workout.session.pushups_id = workout.pushups.id                                                      
+		    AND workout.user.username = '$username'");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
 			  echo '<tr><td>' . $row['date'] . '</td></tr>';

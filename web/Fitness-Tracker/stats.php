@@ -22,14 +22,14 @@
 			$validation = $query->fetch(PDO::FETCH_ASSOC);
 
 			if ($validation['username'] == $username && $validation['password'] == $password) {
-				echo 'user exists!';
+				echo '<p style="text-align:center;">user exists!</p>';
 				echo '<br/>';
 
 				foreach ($db->query('SELECT username, password FROM workout.user') as $row)
 				{
-				  echo '<div class="container"><p>user: ' . $row['username'] . '</p>' . '<p>passowrd: ' . $row['password'] . '</p></div>';
+				  echo '<p style="text-align:center;">user: ' . $row['username'] . '</p>' . '<p>passowrd: ' . $row['password'] . '</p>';
 				//   echo ' password: ' . $row['password'];
-				  echo '<br/>';
+				//   echo '<br/>';
 				}
 				
 				// $statement = $db->query('SELECT date, id FROM workout.session');

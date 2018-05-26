@@ -50,7 +50,7 @@
 			// echo $valid;
 	?>
 
-	<div> class="container">
+	<div class="container">
 	<div class="row">
 	<table class="table table-striped">
 	<thead>
@@ -68,6 +68,7 @@
 			</tr>
 			</tbody>
 			</table>
+			</div>
 			</div>
 
 

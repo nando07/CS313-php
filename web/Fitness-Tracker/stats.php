@@ -23,11 +23,11 @@
 
 			if ($validation['username'] == $username && $validation['password'] == $password) {
 				echo '<p style="text-align:center;">user exists!</p>';
-				echo '<br/>';
+				
 
 				foreach ($db->query('SELECT username, password FROM workout.user') as $row)
 				{
-				  echo '<p style="text-align:center;">user: ' . $row['username'] . '</p>' . '<p>passowrd: ' . $row['password'] . '</p>';
+				  echo '<p style="text-align:center;">user: ' . $row['username'] . '<p>passowrd: ' . $row['password'] . '</p>';
 				//   echo ' password: ' . $row['password'];
 				//   echo '<br/>';
 				}

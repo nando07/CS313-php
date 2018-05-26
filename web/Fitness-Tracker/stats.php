@@ -23,9 +23,9 @@
 			$query = "SELECT username FROM workout.user AS s WHERE s.username = '$username';";
 		$results = pg_query($query) or die('Query Failed '. preg_last_error());	
 			
-		$myRow = pg_fetch_assoc($results);
-		$value = $myRow[username];
-		echo $value;
+		// $myRow = pg_fetch_assoc($results);
+		// $value = $myRow[username];
+		// echo $value;
 			// $valid = ($db->query("SELECT EXISTS (SELECT 1 FROM workout.user WHERE username='$username'"));
 
 			// echo $valid;

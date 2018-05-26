@@ -16,18 +16,24 @@
             $password = $_POST['password'];
 		}
 
+			$query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'");	
+			$validation = $query->fetch(PDO::FETCH_ASSOC);
 
-		if ($username){
-			echo $username . "<br />";
-			echo $password . "<br />";
-			
-			
-			$query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'");
-			
-			$nice = $query->fetch(PDO::FETCH_ASSOC);
-
-			if ($nice['username'] == $username && $nice['password'] == $password) {
+			if ($validation['username'] == $username && $validation['password'] == $password) {
 				echo 'user exists!';
+
+				foreach ($db->query('SELECT username, password FROM workout.user') as $row)
+				{
+				  echo 'user: ' . $row['username'];
+				  echo ' password: ' . $row['password'];
+				  echo '<br/>';
+				}
+				
+				$statement = $db->query('SELECT date, id FROM workout.session');
+				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+				{
+				  echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
+				}
 			} else {
 				echo 'Please check username or passowrd';
 			}
@@ -40,20 +46,6 @@
 			// $valid = ($db->query("SELECT EXISTS (SELECT 1 FROM workout.user WHERE username='$username'"));
 
 			// echo $valid;
-
-            foreach ($db->query('SELECT username, password FROM workout.user') as $row)
-{
-  echo 'user: ' . $row['username'];
-  echo ' password: ' . $row['password'];
-  echo '<br/>';
-}
-
-$statement = $db->query('SELECT date, id FROM workout.session');
-while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-{
-  echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
-}
-		}
 	?>
 </body>
 </html>

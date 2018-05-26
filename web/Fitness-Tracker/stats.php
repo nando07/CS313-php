@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>stats</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
 
@@ -47,6 +49,31 @@
 
 			// echo $valid;
 	?>
+
+	<div> class="container">
+	<div class="row">
+	<table class="table table-striped">
+	<thead>
+	<tr>
+			<th>Date</th>
+			<th>Standard</th>
+			<th>Wide</th>
+			<th>Army</th>
+			<th>Incline</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td><td>
+			</tr>
+			</tbody>
+			</table>
+			</div>
+
+
+
+
+
 </body>
 </html>
 

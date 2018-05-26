@@ -50,7 +50,9 @@
 			// echo $valid;
 	?>
 
+
 	<div class="container">
+	<h1>Push-ups</h1>
 	<div class="row">
 	<table class="table table-striped">
 	<thead>

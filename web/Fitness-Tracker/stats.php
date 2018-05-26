@@ -15,13 +15,13 @@
 			$username = $_POST['username'];
             $password = $_POST['password'];
 		}
-		
-		$db->query("SELECT username FROM workout.user AS s WHERE s.username = '$username'");
-		$results = pg_query($db) or die('Query Failed '. preg_last_error());
+
 
 		if ($username){
 			echo $username . "<br />";
-            echo $password . "<br />";	
+			echo $password . "<br />";
+			$db->query("SELECT username FROM workout.user AS s WHERE s.username = '$username'");
+		$results = pg_query($db) or die('Query Failed '. preg_last_error());	
 			
 			// $valid = ($db->query("SELECT EXISTS (SELECT 1 FROM workout.user WHERE username='$username'"));
 

@@ -23,6 +23,7 @@
 
 			if ($validation['username'] == $username && $validation['password'] == $password) {
 				echo 'user exists!';
+				echo '<br/>';
 
 				foreach ($db->query('SELECT username, password FROM workout.user') as $row)
 				{
@@ -31,25 +32,15 @@
 				  echo '<br/>';
 				}
 				
-				$statement = $db->query('SELECT date, id FROM workout.session');
-				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-				{
-				  echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
-				}
+				// $statement = $db->query('SELECT date, id FROM workout.session');
+				// while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+				// {
+				//   echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
+				// }
 			} else {
 				echo 'Please check username or password';
 			}
-			// echo $nice['username'];
-		//$results = pg_query($query) or die('Query Failed '. preg_last_error());	
-			
-		// $myRow = pg_fetch_assoc($results);
-		// $value = $myRow[username];
-		// echo $value;
-			// $valid = ($db->query("SELECT EXISTS (SELECT 1 FROM workout.user WHERE username='$username'"));
-
-			// echo $valid;
 	?>
-
 
 	<div class="container">
 	<h1>Push-ups</h1>
@@ -114,10 +105,6 @@
 			</table>
 			</div>
 			</div>
-
-
-
-
 </body>
 </html>
 

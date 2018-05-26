@@ -21,9 +21,9 @@
 			echo $username . "<br />";
             echo $password . "<br />";	
 			
-			$valid = ($db->query("SELECT EXISTS (SELECT 1 FROM workout.user WHERE username='$username'"));
+			// $valid = ($db->query("SELECT EXISTS (SELECT 1 FROM workout.user WHERE username='$username'"));
 
-			echo $valid;
+			// echo $valid;
 
             foreach ($db->query('SELECT username, password FROM workout.user') as $row)
 {

@@ -57,7 +57,7 @@
           <h1 class="jumbotron-heading">Fitness Tracker</h1>
           <p class="lead text-muted">Being fit means that you are able to push the limits of your body and not face any serious consequences as a result. This means that you can run long distances, lift heavy weights, go for brisk walks and do all the other things that place your body under stress.</p>
           <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="form.php" class="btn btn-primary my-2">See Your Stats</a>
             <a href="#" class="btn btn-secondary my-2">Secondary action</a>
           </p>
         </div>

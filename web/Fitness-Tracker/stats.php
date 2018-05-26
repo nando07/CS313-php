@@ -71,7 +71,8 @@
 			FROM workout.session, workout.user, workout.pushups      
 			WHERE workout.session.user_id = workout.user.id                  
 			AND workout.session.pushups_id = workout.pushups.id                                                      
-		    AND workout.user.username = '$username'");
+			AND workout.user.username = '$username'
+			ORDER BY date");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
 			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] . '<td>' . $row['standard'] . '</td>' . '<td>' . $row['wide'] . '</td>' . '<td>' . $row['army'] . '</td>' . '<td>' . $row['incline'] . '</td></tr>';
@@ -102,7 +103,8 @@
 			FROM workout.session, workout.user, workout.crunches      
 			WHERE workout.session.user_id = workout.user.id                  
 			AND workout.session.crunches_id = workout.crunches.id                                                      
-		    AND workout.user.username = '$username'");
+		    AND workout.user.username = '$username'
+			ORDER BY date");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
 			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] . '</td>' .'<td>' . $row['standard'] . '</td>' . '<td>' . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' . $row['tuck'] . '</td></tr>';

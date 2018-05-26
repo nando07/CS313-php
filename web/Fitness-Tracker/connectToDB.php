@@ -16,16 +16,16 @@ $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPass
 
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-foreach ($db->query('SELECT username, password FROM workout.user') as $row)
-{
-  echo 'user: ' . $row['username'];
-  echo ' password: ' . $row['password'];
-  echo '<br/>';
-}
+// foreach ($db->query('SELECT username, password FROM workout.user') as $row)
+// {
+//   echo 'user: ' . $row['username'];
+//   echo ' password: ' . $row['password'];
+//   echo '<br/>';
+// }
 
-$statement = $db->query('SELECT date, id FROM workout.session');
-while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-{
-  echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
-}
+// $statement = $db->query('SELECT date, id FROM workout.session');
+// while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+// {
+//   echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
+// }
 ?>

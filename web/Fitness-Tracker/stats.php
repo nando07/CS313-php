@@ -20,7 +20,18 @@
 			echo $username . "<br />";
             echo $password . "<br />";	
             
-            foreach ($db->query('SELECT username, password FROM workout.user') as $row) { echo 'user: ' . $row['username']; echo ' password: ' . $row['password']; echo '<br/>'; }
+            foreach ($db->query('SELECT username, password FROM workout.user') as $row)
+{
+  echo 'user: ' . $row['username'];
+  echo ' password: ' . $row['password'];
+  echo '<br/>';
+}
+
+$statement = $db->query('SELECT date, id FROM workout.session');
+while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+{
+  echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
+}
 		}
 	?>
 </body>

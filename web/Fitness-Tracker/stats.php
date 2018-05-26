@@ -20,7 +20,7 @@
 		if ($username){
 			echo $username . "<br />";
 			echo $password . "<br />";
-			$query = "SELECT username FROM workout.user AS s WHERE s.username = 'Fego'";
+			$query = "SELECT username FROM workout.user AS s WHERE s.username = 'Fego';";
 		$results = pg_query($query) or die('Query Failed '. preg_last_error());	
 			
 		$myRow = pg_fetch_assoc($results);

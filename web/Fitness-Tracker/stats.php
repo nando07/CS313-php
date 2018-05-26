@@ -16,7 +16,7 @@
             $password = $_POST['password'];
 		}
 		
-		$query = "SELECT * FROM workout.user WHERE username='$username'";
+		$query = "SELECT * FROM workout.user";
 		$results = pg_query($query) or die('Query Failed '. preg_last_error());
 
 		if ($username){

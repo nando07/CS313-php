@@ -22,14 +22,14 @@
 			echo $password . "<br />";
 			
 			
-			$query = $db->query("SELECT username FROM workout.user AS u WHERE u.username = '$username'");
+			$query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'");
 			
 			$nice = $query->fetch(PDO::FETCH_ASSOC);
 
-			if ($nice['username'] == $username) {
+			if ($nice['username'] == $username && $nice['password'] == $password) {
 				echo 'user exists!';
 			} else {
-				echo 'user does not exist';
+				echo 'Please check username or passowrd';
 			}
 			// echo $nice['username'];
 		//$results = pg_query($query) or die('Query Failed '. preg_last_error());	

@@ -35,7 +35,7 @@
 				  echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
 				}
 			} else {
-				echo 'Please check username or passowrd';
+				echo 'Please check username or password';
 			}
 			// echo $nice['username'];
 		//$results = pg_query($query) or die('Query Failed '. preg_last_error());	

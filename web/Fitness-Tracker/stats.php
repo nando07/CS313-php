@@ -63,6 +63,7 @@
 			WHERE workout.session.user_id = workout.user.id                  
 			AND workout.session.pushups_id = workout.pushups.id                                                      
 			AND workout.user.username = '$username'
+			AND workout.user.password = '$password'
 			ORDER BY date");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
@@ -95,6 +96,7 @@
 			WHERE workout.session.user_id = workout.user.id                  
 			AND workout.session.crunches_id = workout.crunches.id                                                      
 		    AND workout.user.username = '$username'
+			AND workout.user.password = '$password'
 			ORDER BY date");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{

@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (isset($_POST['username'])) {
+	$_SESSION['username_session'] = $_POST['username'];
+}
+if (isset($_POST['password'])) {
+	$_SESSION['password_session'] = $_POST['password'];
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -144,10 +154,12 @@
 		
 		// select exists(select 1 from contact where id=12)
 		// get from form
-		if (isset($_POST['username']) && isset($_POST['password'])){
-			$username = $_POST['username'];
-            $password = $_POST['password'];
-		}
+		// if (isset($_POST['username']) && isset($_POST['password'])){
+			$username = $_SESSION['username_session'];
+			$password = $_SESSION['password_session'];
+			
+			echo '<p style="text-align:center;">' . $username . ', ' . $password . '</p>';
+		// }
 
 			$query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'");	
 			$validation = $query->fetch(PDO::FETCH_ASSOC);

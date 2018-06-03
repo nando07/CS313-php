@@ -140,6 +140,7 @@
 	<?php 
 
 		require_once('connectToDB.php');
+		$db = get_db();
 		
 		// select exists(select 1 from contact where id=12)
 		// get from form

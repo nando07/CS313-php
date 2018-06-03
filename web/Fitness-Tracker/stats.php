@@ -85,23 +85,23 @@
 		  <img class="card-img-top" src="img/pushups.jpg" alt="Card image cap">
 		  <div class="card-body">
 			  <h3>Push-ups</h3><br />
-		   <form id="abForm" action="" method="POST">
+		   <form id="pForm" action="insertPushups.php" method="POST">
 
-<label for="abStandard">Standard</label>
-<input type="text" class="input" id="abStandard" name="abStandard"/>
-
-<br /><br />
-<label for="abReverse">Wide</label>
-<input type="text" class="input" id="abReverse" name="abReverse"/>
+<label for="pStandard">Standard</label>
+<input type="text" class="input" id="pStandard" name="pStandard"/>
 
 <br /><br />
-<label for="abTwisting">Army</label>
-<input type="text" class="input" id="abTwisting" name="abTwisting"/>
+<label for="pWide">Wide</label>
+<input type="text" class="input" id="pWide" name="pWide"/>
+
+<br /><br />
+<label for="pArmy">Army</label>
+<input type="text" class="input" id="pArmy" name="pArmy"/>
 
 <br /><br />
 
-<label for="abTuck">Incline</label>
-<input type="text" class="input" id="abTuck" name="abTuck"/>
+<label for="pIncline">Incline</label>
+<input type="text" class="input" id="pIncline" name="pIncline"/>
 <br /><br /><br />
 
 
@@ -116,10 +116,10 @@
 		  <img class="card-img-top" src="img/running.jpg" alt="Card image cap">
 		  <div class="card-body">
 			  <h3>Running</h3><br />
-		   <form id="abForm" action="" method="POST">
+		   <form id="rForm" action="" method="POST">
 
-<label for="abStandard">Time</label>
-<input type="text" class="input" id="time" name="time"/><br />
+<label for="rTime">Time</label>
+<input type="text" class="input" id="rTime" name="rTime"/><br />
 
 <br /><br />
 

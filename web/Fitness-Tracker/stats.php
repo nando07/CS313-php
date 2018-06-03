@@ -159,7 +159,6 @@ if (isset($_POST['password'])) {
 			$password = $_SESSION['password_session'];
 
 			$t=time();
-$formattedTime = date()
 echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			
 			echo '<p style="text-align:center;">' . $username . ', ' . $password . '</p>';

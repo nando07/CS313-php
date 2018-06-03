@@ -1,4 +1,8 @@
 <?php
+function get_db() {
+$db = NULL;
+
+try {
 
 $dbUrl = getenv('DATABASE_URL');
 
@@ -15,17 +19,12 @@ $dbName = ltrim($dbopts["path"],'/');
 $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $ex) {
+echo "Error connecting to DB. Details: $ex";
+die();
+}
 
-// foreach ($db->query('SELECT username, password FROM workout.user') as $row)
-// {
-//   echo 'user: ' . $row['username'];
-//   echo ' password: ' . $row['password'];
-//   echo '<br/>';
-// }
-
-// $statement = $db->query('SELECT date, id FROM workout.session');
-// while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-// {
-//   echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
-// }
+return $db;
+}
 ?>

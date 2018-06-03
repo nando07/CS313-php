@@ -54,7 +54,7 @@
 		  <img class="card-img-top" src="img/abs.jpg" alt="Card image cap">
 		  <div class="card-body">
 		   <h3>Crunches</h3><br />
-		   <form id="abForm" action="" method="POST">
+		   <form id="abForm" action="insertCrunches.php" method="POST">
 
 <label for="abStandard">Standard</label>
 <input type="text" class="input" id="abStandard" name="abStandard"/>

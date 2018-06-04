@@ -203,7 +203,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 	<tr>
 			<th>Date</th>
 			<th>User</th>
-			<th>Standard</th>
+			<th>Std.</th>
 			<th>Wide</th>
 			<th>Army</th>
 			<th>Incline</th>
@@ -254,7 +254,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 	<tr>
 			<th>Date</th>
 			<th>User</th>
-			<th>Standard</th>
+			<th>Std.</th>
 			<th>Reverse</th>
 			<th>Twisting</th>
 			<th>Tuck</th>

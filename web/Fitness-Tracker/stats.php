@@ -221,7 +221,6 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			  . '<td><a href="edit.php" class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
 			}
 			?>
-			<!-- <td> <a href="edit.php" class="btn btn-sm btn-outline-secondary">Edit</a></td></tr> -->
 			</tbody>
 			</table>
 			</div>
@@ -252,7 +251,10 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			ORDER BY date");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
-			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] . '</td>' .'<td>' . $row['standard'] . '</td>' . '<td>' . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' . $row['tuck'] . '</td></tr>';
+			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] 
+			  . '</td>' .'<td>' . $row['standard'] . '</td>' . '<td>' 
+			  . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' 
+			  . $row['tuck'] . '<td><a href="edit.php" class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
 			}
 			?>
 			</tbody>

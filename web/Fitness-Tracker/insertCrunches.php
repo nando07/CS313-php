@@ -28,9 +28,11 @@ $statement->execute();
 
 $username = $_SESSION['username_session'];
 $password = $_SESSION['password_session'];
+
 $statement = $db->prepare("SELECT id FROM workout.user 
 WHERE workout.user.username = '$username'
 AND workout.user.password = '$password'");
+$statement->execute();
 
 $row = $statement->fetch(PDO::FETCH_ASSOC);
 

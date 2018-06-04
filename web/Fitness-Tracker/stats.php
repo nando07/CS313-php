@@ -281,7 +281,7 @@ $statement->execute();
 			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] 
 			  . '</td>' .'<td>' . $row['standard'] . '</td>' . '<td>' 
 			  . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' 
-			  . $row['tuck'] . '<td><a href="edit.php?id=' . $row['c_id'] . '"' .'class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
+			  . $row['tuck'] . '<td><a href="edit_crunches.php?id=' . $row['c_id'] . '"' .'class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
 			}
 			?>
 			</tbody>

@@ -11,16 +11,25 @@ $eAbTuck = $_POST['eAbTuck'];
 require("connectToDB.php");
 $db = get_db();
 
+try {
+
 $query = "UPDATE workout.crunches SET 
 standard = '$eAbStandard',
 reverse = '$eAbReverse',
 twisting = '$eAbTwisting',
 tuck = '$eAbTuck'
-WHERE c_id = $id RETURNING id";
+WHERE workout.crunches.c_id = $id RETURNING id";
 
 
 $statement = $db->prepare($query);
 $statement->execute();
+
+} catch (Exception $ex) {
+    echo "Error in database. Details: $ex";
+	die();
+}
+
+
 
 header("Location: stats.php");
 die();

@@ -11,7 +11,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="floating-labels.css" rel="stylesheet">
   </head>
@@ -48,6 +49,8 @@
         </div>
       </div>
     </header>
+    <main role="main">
+
     <form class="form-signin" action="stats.php" method="POST">
       <div class="text-center mb-4">
         <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
@@ -74,5 +77,6 @@
       <button class="btn btn-lg btn-primary btn-block" type="submit">See Your Stats!</button>
       <p class="mt-5 mb-3 text-muted text-center">&copy; Created by: Fernando Gomez 2018</p>
     </form>
+    </main>
   </body>
 </html>

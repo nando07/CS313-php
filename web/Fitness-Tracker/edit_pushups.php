@@ -50,7 +50,7 @@ $id = $_REQUEST['id'];
 <br /><br /><br />
 
 
-		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Save" />
+		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Update" />
 		   </form>
 		  </div>
 		</div>

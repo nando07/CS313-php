@@ -167,25 +167,25 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			$query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'");	
 			$validation = $query->fetch(PDO::FETCH_ASSOC);
 
-			if ($validation['username'] == $username && $validation['password'] == $password) {
-				echo '<p style="text-align:center;">user exists!</p>';
+			// if ($validation['username'] == $username && $validation['password'] == $password) {
+			// 	echo '<p style="text-align:center;">user exists!</p>';
 				
 
-				foreach ($db->query('SELECT username, password FROM workout.user') as $row)
-				{
-				  echo '<p style="text-align:center;">user: ' . $row['username'] . ' password: ' . $row['password'] . '</p>';
-				//   echo ' password: ' . $row['password'];
-				//   echo '<br/>';
-				}
+				// foreach ($db->query('SELECT username, password FROM workout.user') as $row)
+				// {
+				//   echo '<p style="text-align:center;">user: ' . $row['username'] . ' password: ' . $row['password'] . '</p>';
+				// //   echo ' password: ' . $row['password'];
+				// //   echo '<br/>';
+				// }
 				
 				// $statement = $db->query('SELECT date, id FROM workout.session');
 				// while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 				// {
 				//   echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
 				// }
-			} else {
-				echo 'Please check username or password';
-			}
+			// } else {
+			// 	echo 'Please check username or password';
+			// }
 	?>
 
 	<div class="container">

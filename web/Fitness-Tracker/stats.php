@@ -217,10 +217,11 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' 
 			  . $row['username'] . '<td>' . $row['standard'] 
 			  . '</td>' . '<td>' . $row['wide'] . '</td>' . '<td>' 
-			  . $row['army'] . '</td>' . '<td>' . $row['incline'] . '</td>';
+			  . $row['army'] . '</td>' . '<td>' . $row['incline'] . '</td>' 
+			  . '<td><a href="edit.php" class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
 			}
 			?>
-			<td> <a href="edit.php" class="btn btn-default btn-xs">Edit</a></td></tr>
+			<!-- <td> <a href="edit.php" class="btn btn-sm btn-outline-secondary">Edit</a></td></tr> -->
 			</tbody>
 			</table>
 			</div>

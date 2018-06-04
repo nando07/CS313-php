@@ -33,21 +33,21 @@ $id = $_REQUEST['id'];
 		   <form id="editAbForm" action="update_c.php?id=<?php echo $id;?>" method="POST">
 
 <label for="abStandard">Standard</label>
-<input type="text" class="input" id="eAbStandard" name="eAbStandard"/>
+<input type="text" class="form-control" id="eAbStandard" name="eAbStandard" required/>
 
-<br /><br />
+
 <label for="abReverse">Reverse </label>
-<input type="text" class="input" id="eAbReverse" name="eAbReverse"/>
+<input type="text" class="form-control" id="eAbReverse" name="eAbReverse" required/>
 
-<br /><br />
+
 <label for="abTwisting">Twisting</label>
-<input type="text" class="input" id="eAbTwisting" name="eAbTwisting"/>
+<input type="text" class="form-control" id="eAbTwisting" name="eAbTwisting" required/>
 
-<br /><br />
+
 
 <label for="abTuck">Tuck:</label>
-<input type="text"  class="input" id="eAbTuck" name="eAbTuck"/>
-<br /><br /><br />
+<input type="text"  class="form-control" id="eAbTuck" name="eAbTuck" required/>
+<br /><br />
 
 
 		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Update" />

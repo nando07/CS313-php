@@ -33,21 +33,21 @@ $id = $_REQUEST['id'];
 		   <form id="pForm" action="update_p.php?id=<?php echo $id;?>" method="POST">
 
 <label for="pStandard">Standard</label>
-<input type="text" class="input" id="ePStandard" name="ePStandard"/>
+<input type="text" class="form-control" id="ePStandard" name="ePStandard" required/>
 
-<br /><br />
+
 <label for="pWide">Wide</label>
-<input type="text" class="input" id="ePWide" name="ePWide"/>
+<input type="text" class="form-control" id="ePWide" name="ePWide" required/>
 
-<br /><br />
+
 <label for="pArmy">Army</label>
-<input type="text" class="input" id="ePArmy" name="ePArmy"/>
+<input type="text" class="form-control" id="ePArmy" name="ePArmy" required/>
 
-<br /><br />
+
 
 <label for="pIncline">Incline</label>
-<input type="text" class="input" id="ePIncline" name="ePIncline"/>
-<br /><br /><br />
+<input type="text" class="form-control" id="ePIncline" name="ePIncline" required/>
+<br /><br />
 
 
 		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Update" />

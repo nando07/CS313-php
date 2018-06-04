@@ -25,7 +25,7 @@ $statement = $db->prepare($query);
 $statement->execute();
 
 } catch (Exception $ex) {
-    echo "Error in database. Details: $ex";
+    echo "Error in database. Details: $ex" . "this is the id: " . $id;
 	die();
 }
 

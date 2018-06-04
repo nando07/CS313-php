@@ -76,7 +76,7 @@ if (isset($_POST['password'])) {
 <input type="text" class="input" id="abReverse" name="abReverse"/>
 
 <br /><br />
-<label for="abTwisting">Twisting</label>
+<label for="abTwisting">Twist</label>
 <input type="text" class="input" id="abTwisting" name="abTwisting"/>
 
 <br /><br />
@@ -256,7 +256,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			<th>User</th>
 			<th>Std.</th>
 			<th>Reverse</th>
-			<th>Twisting</th>
+			<th>Twist</th>
 			<th>Tuck</th>
 			<th></th>
 			</tr>

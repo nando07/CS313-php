@@ -40,7 +40,7 @@ $userId = $row['id'];
 $t = time();
 $formattedT = date("Y-m-d h:i:s",$t);
 
-$crunchesId = $db->lastInsertId("id_seq");
+$crunchesId = $db->lastInsertId("workout.crunches_id_seq");
 echo  "this is the crunches id: $crunchesId";
 
 $statement = $db->prepare('INSERT INTO workout.session(date, user_id, pushups_id, crunches_id) 

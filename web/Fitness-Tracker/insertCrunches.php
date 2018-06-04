@@ -41,6 +41,7 @@ $t = time();
 $formattedT = date("Y-m-d h:i:s",$t);
 
 $crunchesId = $db->lastInsertId("id_seq");
+echo  "this is the crunches id: $crunchesId";
 
 $statement = $db->prepare('INSERT INTO workout.session(date, user_id, pushups_id, crunches_id) 
 VALUES (:ctime, :user, :pushupsID, :crunchesID)');

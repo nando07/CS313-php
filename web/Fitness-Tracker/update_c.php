@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$id = filter_var($_GET['id'], FILTER_VALIDATE_INT);
+$id = $_REQUEST['id'];
 
 $eAbStandard = $_POST['eAbStandard'];
 $eAbReverse = $_POST['eAbReverse'];
@@ -18,7 +18,7 @@ standard = '$eAbStandard',
 reverse = '$eAbReverse',
 twisting = '$eAbTwisting',
 tuck = '$eAbTuck'
-WHERE workout.crunches.c_id = $id RETURNING id";
+WHERE c_id = $id";
 
 
 $statement = $db->prepare($query);

@@ -206,10 +206,10 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			<tbody>
 			<?php 
 			
-			$query = "SELECT date, username, standard, wide, army, incline                                                                              
+			$query = "SELECT date, username, p_id, standard, wide, army, incline                                                                              
 			FROM workout.session, workout.user, workout.pushups      
 			WHERE workout.session.user_id = workout.user.id                  
-			AND workout.session.pushups_id = workout.pushups.id                                                      
+			AND workout.session.pushups_id = workout.pushups.p_id                                                      
 			AND workout.user.username = '$username'
 			AND workout.user.password = '$password'
 			ORDER BY date";
@@ -231,7 +231,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			  . $row['username'] . '<td>' . $row['standard'] 
 			  . '</td>' . '<td>' . $row['wide'] . '</td>' . '<td>' 
 			  . $row['army'] . '</td>' . '<td>' . $row['incline'] . '</td>' 
-			  . '<td><a href="edit.php" class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
+			  . '<td><a href="edit_pushups.php?id=' . $row['p_id'] . '"' . 'class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
 			}
 			?>
 			</tbody>

@@ -25,34 +25,33 @@ $id = $_REQUEST['id'];
   <div class="container">
 
 	<div class="row">
-	  <div class="col-md-4">
+    <div class="col-md-4">
 		<div class="card mb-4 box-shadow">
-		  <img class="card-img-top" src="img/abs.jpg" alt="Card image cap">
+		  <img class="card-img-top" src="img/pushups.jpg" alt="Card image cap">
 		  <div class="card-body">
-		   <h3>Crunches</h3><br />
-		   <form id="editAbForm" action="update_c.php?id=<?php echo $id;?>" method="POST">
+			  <h3>Push-ups</h3><br />
+		   <form id="pForm" action="update_p.php?id=<?php echo $id;?>" method="POST">
 
-<label for="abStandard">Standard</label>
-<input type="text" class="input" id="eAbStandard" name="eAbStandard"/>
-
-<br /><br />
-<label for="abReverse">Reverse </label>
-<input type="text" class="input" id="eAbReverse" name="eAbReverse"/>
+<label for="pStandard">Standard</label>
+<input type="text" class="input" id="ePStandard" name="ePStandard"/>
 
 <br /><br />
-<label for="abTwisting">Twisting</label>
-<input type="text" class="input" id="eAbTwisting" name="eAbTwisting"/>
+<label for="pWide">Wide</label>
+<input type="text" class="input" id="ePWide" name="ePWide"/>
+
+<br /><br />
+<label for="pArmy">Army</label>
+<input type="text" class="input" id="ePArmy" name="ePArmy"/>
 
 <br /><br />
 
-<label for="abTuck">Tuck:</label>
-<input type="text"  class="input" id="eAbTuck" name="eAbTuck"/>
+<label for="pIncline">Incline</label>
+<input type="text" class="input" id="ePIncline" name="ePIncline"/>
 <br /><br /><br />
 
 
-		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Update" />
+		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Save" />
 		   </form>
-		 
 		  </div>
 		</div>
 	  </div>

@@ -92,10 +92,10 @@ if (isset($_POST['password'])) {
 	  </div>
 	  <div class="col-md-4">
 		<div class="card mb-4 box-shadow">
-		<video width="451" height="368" muted autoplay loop>
+		<video class="card-img-top" width="451" height="368" muted autoplay loop>
   <source src="videos/pushups.mp4" type="video/mp4">
 </video>
-		  <img class="card-img-top" src="img/pushups.jpg" alt="Card image cap">
+		  <!-- <img class="card-img-top" src="img/pushups.jpg" alt="Card image cap"> -->
 		  <div class="card-body">
 			  <h3>Push-ups</h3><br />
 		   <form id="pForm" action="insertPushups.php" method="POST">

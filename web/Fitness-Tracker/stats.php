@@ -205,7 +205,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			</thead>
 			<tbody>
 			<?php 
-			$statement = $db->query("SELECT date, username, id, standard, wide, army, incline                                                                              
+			$statement = $db->query("SELECT date, username, standard, wide, army, incline                                                                              
 			FROM workout.session, workout.user, workout.pushups      
 			WHERE workout.session.user_id = workout.user.id                  
 			AND workout.session.pushups_id = workout.pushups.id                                                      
@@ -217,8 +217,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' 
 			  . $row['username'] . '<td>' . $row['standard'] 
 			  . '</td>' . '<td>' . $row['wide'] . '</td>' . '<td>' 
-			  . $row['army'] . '</td>' . '<td>' . $row['incline'] 
-			  . '<td><a href="edit.php" class="btn btn-default btn-xs">Edit</a>' . '</td></tr>';
+			  . $row['army'] . '</td>' . '<td>' . $row['incline'] . '</td></tr>';
 			}
 			?>
 			</tbody>

@@ -69,7 +69,7 @@ if (isset($_POST['password'])) {
 		   <form id="abForm" action="insertCrunches.php" method="POST">
 
 <label for="abStandard">Standard</label>
-<input type="text" class="input form-control" id="abStandard" name="abStandard" required autofocus/>
+<input type="text" class="form-control" id="abStandard" name="abStandard" required autofocus/>
 
 <label for="abReverse">Reverse </label>
 <input type="text" class="form-control" id="abReverse" name="abReverse" required autofocus/>
@@ -79,7 +79,7 @@ if (isset($_POST['password'])) {
 
 <label for="abTuck">Tuck:</label>
 <input type="text"  class="form-control" id="abTuck" name="abTuck" required autofocus/>
-
+<br /><br />
 
 
 		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Save" />

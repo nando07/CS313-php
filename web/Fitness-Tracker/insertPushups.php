@@ -34,7 +34,7 @@ $row = $statement->fetch(PDO::FETCH_ASSOC);
 
 $userId = $row['id'];
 $t = time();
-$formattedT = date("Y-M-d h:i:s",$t);
+$formattedT = date("Y-m-d h:i:s",$t);
 
 $pushupsId = $db->lastInsertId("workout.pushups_id_seq");
 echo  "this is the crunches id: $pushupsId";

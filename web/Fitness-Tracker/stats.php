@@ -255,14 +255,26 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			</tr>
 			</thead>
 			<tbody>
-			<?php 
-			$statement = $db->query("SELECT date, username, standard, reverse, twisting, tuck                                                                              
+			<?php
+			
+			$query = "SELECT date, username, standard, reverse, twisting, tuck                                                                              
 			FROM workout.session, workout.user, workout.crunches      
 			WHERE workout.session.user_id = workout.user.id                  
 			AND workout.session.crunches_id = workout.crunches.id                                                      
 		    AND workout.user.username = '$username'
 			AND workout.user.password = '$password'
-			ORDER BY date");
+			ORDER BY date";
+
+$statement = $db->prepare($query);
+$statement->execute();
+
+			// $statement = $db->query("SELECT date, username, standard, reverse, twisting, tuck                                                                              
+			// FROM workout.session, workout.user, workout.crunches      
+			// WHERE workout.session.user_id = workout.user.id                  
+			// AND workout.session.crunches_id = workout.crunches.id                                                      
+		    // AND workout.user.username = '$username'
+			// AND workout.user.password = '$password'
+			// ORDER BY date");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
 			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] 

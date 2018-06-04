@@ -16,7 +16,7 @@ standard = '$eAbStandard',
 reverse = '$eAbReverse',
 twisting = '$eAbTwisting',
 tuck = '$eAbTuck'
-WHERE c_id = $id";
+WHERE c_id = $id RETURNING id";
 
 
 $statement = $db->prepare($query);

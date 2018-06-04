@@ -50,7 +50,6 @@
       </div>
     </header>
     <main role="main">
-
     <form class="form-signin" action="stats.php" method="POST">
       <div class="text-center mb-4">
         <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
@@ -77,6 +76,21 @@
       <button class="btn btn-lg btn-primary btn-block" type="submit">See Your Stats!</button>
       <p class="mt-5 mb-3 text-muted text-center">&copy; Created by: Fernando Gomez 2018</p>
     </form>
-    </main>
+</main>
+<footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Fit Tracker &copy; by Fernando Gomez</p>
+        
+      </div>
+    </footer>
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
   </body>
 </html>

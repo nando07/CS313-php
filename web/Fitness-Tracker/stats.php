@@ -198,6 +198,8 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 	<div class="container">
 	<h1>Push-ups</h1>
 	<div class="row">
+	<div class="col-md-4">
+		<div class="card mb-4 box-shadow">
 	<table class="table table-striped">
 	<thead>
 	<tr>
@@ -243,6 +245,8 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			?>
 			</tbody>
 			</table>
+			</div>
+			</div>
 			</div>
 			</div>
 

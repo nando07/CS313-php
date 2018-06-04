@@ -25,7 +25,7 @@
 		  <img class="card-img-top" src="img/abs.jpg" alt="Card image cap">
 		  <div class="card-body">
 		   <h3>Crunches</h3><br />
-		   <form id="editAbForm" action="update_c.php" method="POST">
+		   <form id="editAbForm" action="update_c.php?id=<?php filter_var($_GET['id'], FILTER_VALIDATE_INT);?>" method="POST">
 
 <label for="abStandard">Standard</label>
 <input type="text" class="input" id="eAbStandard" name="eAbStandard"/>

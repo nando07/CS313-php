@@ -256,6 +256,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			</thead>
 			<tbody>
 			<?php
+
 			
 			$query = "SELECT date, username, standard, reverse, twisting, tuck                                                                              
 			FROM workout.session, workout.user, workout.crunches      
@@ -280,7 +281,7 @@ $statement->execute();
 			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] 
 			  . '</td>' .'<td>' . $row['standard'] . '</td>' . '<td>' 
 			  . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' 
-			  . $row['tuck'] . '<td><a href="edit.php" class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
+			  . $row['tuck'] . $row['workout.crunches.id'] . '<td><a href="edit.php" class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
 			}
 			?>
 			</tbody>

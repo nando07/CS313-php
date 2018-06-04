@@ -134,7 +134,7 @@ if (isset($_POST['password'])) {
 <label for="rTime">Time</label>
 <input type="text" class="form-control" id="rTime" name="rTime" required/>
 
-<br /><br />
+<br />
 
 
 		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Save" />

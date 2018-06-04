@@ -72,13 +72,13 @@ if (isset($_POST['password'])) {
 <input type="text" class="form-control" id="abStandard" name="abStandard" required autofocus/>
 
 <label for="abReverse">Reverse </label>
-<input type="text" class="form-control" id="abReverse" name="abReverse" required autofocus/>
+<input type="text" class="form-control" id="abReverse" name="abReverse" required/>
 
 <label for="abTwisting">Twist</label>
-<input type="text" class="form-control" id="abTwisting" name="abTwisting" required autofocus/>
+<input type="text" class="form-control" id="abTwisting" name="abTwisting" required />
 
 <label for="abTuck">Tuck:</label>
-<input type="text"  class="form-control" id="abTuck" name="abTuck" required autofocus/>
+<input type="text"  class="form-control" id="abTuck" name="abTuck" required />
 <br /><br />
 
 
@@ -99,21 +99,21 @@ if (isset($_POST['password'])) {
 		   <form id="pForm" action="insertPushups.php" method="POST">
 
 <label for="pStandard">Standard</label>
-<input type="text" class="input" id="pStandard" name="pStandard"/>
+<input type="text" class="form-control" id="pStandard" name="pStandard" required/>
 
-<br /><br />
+
 <label for="pWide">Wide</label>
-<input type="text" class="input" id="pWide" name="pWide"/>
+<input type="text" class="form-control" id="pWide" name="pWide" required/>
 
-<br /><br />
+
 <label for="pArmy">Army</label>
-<input type="text" class="input" id="pArmy" name="pArmy"/>
+<input type="text" class="form-control" id="pArmy" name="pArmy" required/>
 
-<br /><br />
+
 
 <label for="pIncline">Incline</label>
-<input type="text" class="input" id="pIncline" name="pIncline"/>
-<br /><br /><br />
+<input type="text" class="form-control" id="pIncline" name="pIncline" required/>
+<br /><br />
 
 
 		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Save" />
@@ -132,7 +132,7 @@ if (isset($_POST['password'])) {
 		   <form id="rForm" action="" method="POST">
 
 <label for="rTime">Time</label>
-<input type="text" class="input" id="rTime" name="rTime"/><br />
+<input type="text" class="form-control" id="rTime" name="rTime" required/>
 
 <br /><br />
 

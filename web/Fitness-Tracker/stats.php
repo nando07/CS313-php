@@ -79,7 +79,7 @@ if (isset($_POST['password'])) {
 
 <label for="abTuck">Tuck:</label>
 <input type="text"  class="form-control" id="abTuck" name="abTuck" required />
-<br /><br />
+<br />
 
 
 		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Save" />
@@ -113,7 +113,7 @@ if (isset($_POST['password'])) {
 
 <label for="pIncline">Incline</label>
 <input type="text" class="form-control" id="pIncline" name="pIncline" required/>
-<br /><br />
+<br />
 
 
 		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Save" />

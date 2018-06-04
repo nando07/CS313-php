@@ -47,7 +47,7 @@ $id = $_REQUEST['id'];
 
 <label for="pIncline">Incline</label>
 <input type="text" class="form-control" id="ePIncline" name="ePIncline" required/>
-<br /><br />
+<br />
 
 
 		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Update" />

@@ -47,7 +47,7 @@ $id = $_REQUEST['id'];
 
 <label for="abTuck">Tuck:</label>
 <input type="text"  class="form-control" id="eAbTuck" name="eAbTuck" required/>
-<br /><br />
+<br />
 
 
 		   <input type="submit" class="btn btn-sm btn-outline-secondary" value="Update" />

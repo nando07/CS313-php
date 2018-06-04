@@ -161,7 +161,7 @@ if (isset($_POST['password'])) {
 			$t=time();
 echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			
-			echo '<p style="text-align:center;">' . $username . ', ' . $password . '</p>';
+		//	echo '<p style="text-align:center;">' . $username . ', ' . $password . '</p>';
 		// }
 
 			$query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'");	

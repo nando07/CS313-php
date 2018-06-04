@@ -200,7 +200,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			<th>Wide</th>
 			<th>Army</th>
 			<th>Incline</th>
-			<th>Edit</th>
+			<th></th>
 			</tr>
 			</thead>
 			<tbody>
@@ -238,6 +238,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			<th>Reverse</th>
 			<th>Twisting</th>
 			<th>Tuck</th>
+			<th></th>
 			</tr>
 			</thead>
 			<tbody>

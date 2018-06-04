@@ -61,7 +61,9 @@ if (isset($_POST['password'])) {
 	<div class="row">
 	  <div class="col-md-4">
 		<div class="card mb-4 box-shadow">
-		  <img class="card-img-top" src="img/abs.jpg" alt="Card image cap">
+		<video class="card-img-top" muted autoplay loop>
+  <source src="videos/abs.mp4" type="video/mp4">
+</video>
 		  <div class="card-body">
 		   <h3>Crunches</h3><br />
 		   <form id="abForm" action="insertCrunches.php" method="POST">
@@ -126,7 +128,9 @@ if (isset($_POST['password'])) {
 	  
 	  <div class="col-md-4">
 		<div class="card mb-4 box-shadow">
-		  <img class="card-img-top" src="img/running.jpg" alt="Card image cap">
+		<video class="card-img-top" muted autoplay loop>
+  <source src="videos/run.mp4" type="video/mp4">
+</video>
 		  <div class="card-body">
 			  <h3>Running</h3><br />
 		   <form id="rForm" action="" method="POST">

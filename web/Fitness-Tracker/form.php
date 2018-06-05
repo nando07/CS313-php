@@ -1,12 +1,12 @@
 <?php 
 
-require_once('connectToDB.php');
-$db = get_db();
-
 $username = $_POST['username'];
 $password = $_POST['password'];
 $success = "";
 $error = "";
+
+require_once('connectToDB.php');
+$db = get_db();
 
 if(isset($_POST['submit'])) {
 $query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'");	

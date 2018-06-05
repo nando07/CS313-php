@@ -1,11 +1,11 @@
 <?php
 session_start();
-if (isset($_POST['username'])) {
-	$_SESSION['username_session'] = $_POST['username'];
-}
-if (isset($_POST['password'])) {
-	$_SESSION['password_session'] = $_POST['password'];
-}
+// if (isset($_POST['username'])) {
+// 	$_SESSION['username_session'] = $_POST['username'];
+// }
+// if (isset($_POST['password'])) {
+// 	$_SESSION['password_session'] = $_POST['password'];
+// }
 ?>
 
 <!DOCTYPE html>

@@ -18,7 +18,7 @@ require_once('connectToDB.php');
 $db = get_db();
 
 if(isset($_POST['submit'])) {
-$query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'");	
+$query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'";	
     
     $statement = $db->prepare($query);
 

@@ -61,8 +61,17 @@ $query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$
         <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Let's authenticate you!</h1>
         <p>Input your username and password to see your current stats! Test with 'Fego' and 'pass'</p>
-<!--        <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>-->
-      <p class="alert alert-danger"><?php echo $error; ?></p><p class="alert alert-success"><?php echo $success; ?></p>
+<!--  
+        <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>-->
+        <?php 
+
+      if(isset($error)) {
+      echo '<p class="alert alert-danger">' . $error . '</p>';
+      }
+      if(isset($success)) {
+      echo '<p class="alert alert-success">' . $success . '</p>';
+      }
+      ?>
 
       </div>
 

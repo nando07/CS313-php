@@ -28,7 +28,7 @@ $query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$
 
     if ($row['username'] == $username && $row['password'] == $password) {
       $success = "Username and Password are valid!";
-      header("refresh:5; Location: stats.php");
+      header("refresh:5; url: stats.php");
   } else {
      $error = "Invalid username or password"; 
   }

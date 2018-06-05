@@ -1,3 +1,31 @@
+<?php 
+
+require_once('connectToDB.php');
+$db = get_db();
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+$success = "";
+$error = "";
+
+$query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'");	
+    
+    $statement = $db->prepare($query);
+
+    $statement->execute();
+
+    $row = $statement->fetch(PDO::FETCH_ASSOC);
+
+    if ($row['username'] == $username && $row['password'] == $password) {
+      $success = "Username and Password are valid!";
+      header("Location: stats.php");
+      die();
+  } else {
+     $error = "Invalid username or password"; 
+  }
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,13 +46,15 @@
   </head>
 
   <body>
-
-    <form class="form-signin" action="stats.php" method="POST">
+  <p class="alert alert-danger"><?php echo $error; ?></p><p class="alert alert-success"><?php echo $success; ?></p>
+    <form class="form-signin" method="POST">
       <div class="text-center mb-4">
         <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Let's authenticate you!</h1>
         <p>Input your username and password to see your current stats! Test with 'Fego' and 'pass'</p>
 <!--        <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>-->
+      
+
       </div>
 
       <div class="form-label-group">

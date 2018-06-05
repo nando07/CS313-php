@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 session_start();
 if (isset($_POST['username'])) {
 	$_SESSION['username_session'] = $_POST['username'];
@@ -6,12 +6,12 @@ if (isset($_POST['username'])) {
 if (isset($_POST['password'])) {
 	$_SESSION['password_session'] = $_POST['password'];
 }
-?>
+?> -->
 
 <?php
 
-$username = $_SESSION['username_session'];
-$password = $_SESSION['password_session'];
+$username = $_POST['username'];
+$password = $_POST['password'];
 $success = "";
 $error = "";
 

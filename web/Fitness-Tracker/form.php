@@ -8,6 +8,7 @@ $password = $_POST['password'];
 $success = "";
 $error = "";
 
+if(isset($_POST['submit'])) {
 $query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'");	
     
     $statement = $db->prepare($query);
@@ -23,6 +24,7 @@ $query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.us
   } else {
      $error = "Invalid username or password"; 
   }
+}
 ?>
 
 
@@ -72,7 +74,7 @@ $query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.us
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">See Your Stats!</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">See Your Stats!</button>
       <p class="mt-5 mb-3 text-muted text-center">&copy; Created by: Fernando Gomez 2018</p>
     </form>
 

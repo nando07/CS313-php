@@ -11,8 +11,8 @@ if (isset($_POST['password'])) {
 
 $username = $_POST['username'];
 $password = $_POST['password'];
-$success = "";
-$error = "";
+$success = NULL;
+$error = NULL;
 
 require_once('connectToDB.php');
 $db = get_db();

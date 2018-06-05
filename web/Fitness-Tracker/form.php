@@ -1,7 +1,17 @@
 <?php 
+session_start();
+if (isset($_POST['username'])) {
+	$_SESSION['username_session'] = $_POST['username'];
+}
+if (isset($_POST['password'])) {
+	$_SESSION['password_session'] = $_POST['password'];
+}
+?>
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+<?php
+
+$username = $_SESSION['username_session'];
+$password = $_SESSION['password_session'];
 $success = "";
 $error = "";
 
@@ -27,7 +37,6 @@ $query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.us
 }
 ?>
 
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -48,14 +57,14 @@ $query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.us
   </head>
 
   <body>
-  <p class="alert alert-danger"><?php echo $error; ?></p><p class="alert alert-success"><?php echo $success; ?></p>
     <form class="form-signin" method="POST">
       <div class="text-center mb-4">
+
         <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Let's authenticate you!</h1>
         <p>Input your username and password to see your current stats! Test with 'Fego' and 'pass'</p>
 <!--        <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>-->
-      
+      <p class="alert alert-danger"><?php echo $error; ?></p><p class="alert alert-success"><?php echo $success; ?></p>
 
       </div>
 

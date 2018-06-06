@@ -71,13 +71,13 @@ session_start();
 
 
 <input type="number" min="0" class="form-control" id="abStandard" name="abStandard" placeholder="Standard" required autofocus/>
-
+<br />
 
 <input type="number" min="0" class="form-control" id="abReverse" name="abReverse" placeholder="Reverse" required/>
-
+<br />
 
 <input type="number" min="0" class="form-control" id="abTwisting" name="abTwisting" placeholder="Twisting" required />
-
+<br />
 
 <input type="number" min="0"  class="form-control" id="abTuck" name="abTuck" placeholder="Tuck" required />
 <br />

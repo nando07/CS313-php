@@ -283,9 +283,9 @@ $statement->execute();
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
 				$date = date_create($row['date']);
+				$formattedDate = $date_format($date, "M/d/Y");
 
-
-			  echo '<tr><td>' . $date_format($date, "M/d/Y") . '</td>' . '<td>' . $row['username'] 
+			  echo '<tr><td>' . $formattedDate . '</td>' . '<td>' . $row['username'] 
 			  . '</td>' .'<td>' . $row['standard'] . '</td>' . '<td>' 
 			  . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' 
 			  . $row['tuck'] . '<td><a href="edit_crunches.php?id=' . $row['c_id'] . '"' .'class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';

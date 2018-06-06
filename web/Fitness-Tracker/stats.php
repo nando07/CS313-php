@@ -262,7 +262,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			<?php
 
 			
-			$query = "SELECT TO_CHAR(date, 'MON-DD-YYY'), username, c_id, standard, reverse, twisting, tuck                                                                              
+			$query = "SELECT TO_CHAR(date, 'MON-DD-YYY') date, username, c_id, standard, reverse, twisting, tuck                                                                              
 			FROM workout.session, workout.user, workout.crunches      
 			WHERE workout.session.user_id = workout.user.id                  
 			AND workout.session.crunches_id = workout.crunches.c_id                                                      

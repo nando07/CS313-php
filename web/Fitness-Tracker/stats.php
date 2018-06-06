@@ -282,7 +282,10 @@ $statement->execute();
 			// ORDER BY date");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
-			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] 
+				$date = date_create($row['date']);
+
+
+			  echo '<tr><td>' . $date_format($date, "M/d/Y") . '</td>' . '<td>' . $row['username'] 
 			  . '</td>' .'<td>' . $row['standard'] . '</td>' . '<td>' 
 			  . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' 
 			  . $row['tuck'] . '<td><a href="edit_crunches.php?id=' . $row['c_id'] . '"' .'class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';

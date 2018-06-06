@@ -262,7 +262,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			<?php
 
 			
-			$query = "SELECT date, username, c_id, standard, reverse, twisting, tuck                                                                              
+			$query = "SELECT TO_CHAR(date, 'MON-DD-YYY'), username, c_id, standard, reverse, twisting, tuck                                                                              
 			FROM workout.session, workout.user, workout.crunches      
 			WHERE workout.session.user_id = workout.user.id                  
 			AND workout.session.crunches_id = workout.crunches.c_id                                                      
@@ -283,9 +283,9 @@ $statement->execute();
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
 				
-				$formattedDate = $date_format($row['date'], 'M/d/Y');
+				
 
-			  echo '<tr><td>' . $formattedDate . '</td>' . '<td>' . $row['username'] 
+			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] 
 			  . '</td>' .'<td>' . $row['standard'] . '</td>' . '<td>' 
 			  . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' 
 			  . $row['tuck'] . '<td><a href="edit_crunches.php?id=' . $row['c_id'] . '"' .'class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';

@@ -54,7 +54,7 @@
 
       <section class="jumbotron text-center">
         <div class="container">
-        <video id="home-background-video" poster="img/pushups.jpg" autoplay loop muted>
+        <video id="home-background-video" poster="img/home.jpg" autoplay loop muted>
             <source src="videos/home.mp4" type="video/mp4">    
         </video>
         <div id="home-overlay"></div>

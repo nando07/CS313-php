@@ -282,8 +282,8 @@ $statement->execute();
 			// ORDER BY date");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
-				$date = date_create($row['date']);
-				$formattedDate = $date_format($date, 'M/d/Y');
+				
+				$formattedDate = $date_format($row['date'], 'M/d/Y');
 
 			  echo '<tr><td>' . $formattedDate . '</td>' . '<td>' . $row['username'] 
 			  . '</td>' .'<td>' . $row['standard'] . '</td>' . '<td>' 

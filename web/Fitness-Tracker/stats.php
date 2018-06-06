@@ -134,6 +134,7 @@ session_start();
   <source src="videos/run.mp4" type="video/mp4">
 </video>
 		  <div class="card-body">
+			  <p style="font-color:red;">Still in Beta</p>
 			  <h3>Running</h3><br />
 		   <form id="rForm" action="" method="POST">
 

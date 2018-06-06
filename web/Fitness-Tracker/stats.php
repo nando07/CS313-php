@@ -20,7 +20,6 @@ session_start();
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
-	<link href="floating-labels.css" rel="stylesheet">
 </head>
 <body>
 <header>

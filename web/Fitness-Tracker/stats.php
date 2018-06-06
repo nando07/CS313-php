@@ -20,6 +20,7 @@ session_start();
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
+	<link href="floating-labels.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -100,22 +101,22 @@ session_start();
 		   <form class="form-signin" action="insertPushups.php" method="POST">
 
 <div class="form-label-group">
-<input type="text" class="form-control" id="pStandard" name="pStandard" placeholder="Standard" required/>
+<input type="number" class="form-control" id="pStandard" name="pStandard" placeholder="Standard" required/>
 
 </div>
 
 <div class="form-label-group">
-<input type="text" class="form-control" id="pWide" name="pWide" placeholder="Wide" required/>
+<input type="number" class="form-control" id="pWide" name="pWide" placeholder="Wide" required/>
 
 </div>
 
 <div class="form-label-group">
-<input type="text" class="form-control" id="pArmy" name="pArmy" placeholder="Army" required/>
+<input type="number" class="form-control" id="pArmy" name="pArmy" placeholder="Army" required/>
 
 </div>
 
 <div class="form-label-group">
-<input type="text" class="form-control" id="pIncline" name="pIncline" placeholder="Incline" required/>
+<input type="number" class="form-control" id="pIncline" name="pIncline" placeholder="Incline" required/>
 
 </div>
 

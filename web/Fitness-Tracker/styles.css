@@ -15,6 +15,10 @@
   }
 }
 
+#nav-style {
+  background-color: black;
+}
+
 #home-background-video {
   position: fixed;
   top: 50%;

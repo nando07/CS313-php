@@ -69,17 +69,17 @@ session_start();
 		   <h3>Crunches</h3><br />
 		   <form id="abForm" action="insertCrunches.php" method="POST">
 
-<label for="abStandard">Standard</label>
-<input type="number" min="0" class="form-control" id="abStandard" name="abStandard" required autofocus/>
 
-<label for="abReverse">Reverse </label>
-<input type="number" min="0" class="form-control" id="abReverse" name="abReverse" required/>
+<input type="number" min="0" class="form-control" id="abStandard" name="abStandard" placeholder="Standard" required autofocus/>
 
-<label for="abTwisting">Twist</label>
-<input type="number" min="0" class="form-control" id="abTwisting" name="abTwisting" required />
 
-<label for="abTuck">Tuck:</label>
-<input type="number" min="0"  class="form-control" id="abTuck" name="abTuck" required />
+<input type="number" min="0" class="form-control" id="abReverse" name="abReverse" placeholder="Reverse" required/>
+
+
+<input type="number" min="0" class="form-control" id="abTwisting" name="abTwisting" placeholder="Twisting" required />
+
+
+<input type="number" min="0"  class="form-control" id="abTuck" name="abTuck" placeholder="Tuck" required />
 <br />
 
 
@@ -101,22 +101,22 @@ session_start();
 
 <div class="form-label-group">
 <input type="number" min="0" class="form-control" id="pStandard" name="pStandard" placeholder="Standard" required/>
-
+<br />
 </div>
 
 <div class="form-label-group">
 <input type="number" min="0" class="form-control" id="pWide" name="pWide" placeholder="Wide" required/>
-
+<br />
 </div>
 
 <div class="form-label-group">
 <input type="number" min="0" class="form-control" id="pArmy" name="pArmy" placeholder="Army" required/>
-
+<br />
 </div>
 
 <div class="form-label-group">
 <input type="number" min="0" class="form-control" id="pIncline" name="pIncline" placeholder="Incline" required/>
-
+<br />
 </div>
 
 <br />

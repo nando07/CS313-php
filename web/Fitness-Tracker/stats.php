@@ -100,22 +100,22 @@ session_start();
 		   <form id="pForm" action="insertPushups.php" method="POST">
 
 <div class="form-label-group">
-<input type="text" class="form-control" id="pStandard" name="pStandard" required/>
+<input type="text" class="form-control" id="pStandard" name="pStandard" placeholder="Standard" required/>
 <label for="pStandard">Standard</label>
 </div>
 
 <div class="form-label-group">
-<input type="text" class="form-control" id="pWide" name="pWide" required/>
+<input type="text" class="form-control" id="pWide" name="pWide" placeholder="Wide" required/>
 <label for="pWide">Wide</label>
 </div>
 
 <div class="form-label-group">
-<input type="text" class="form-control" id="pArmy" name="pArmy" required/>
+<input type="text" class="form-control" id="pArmy" name="pArmy" placeholder="Army" required/>
 <label for="pArmy">Army</label>
 </div>
 
 <div class="form-label-group">
-<input type="text" class="form-control" id="pIncline" name="pIncline" required/>
+<input type="text" class="form-control" id="pIncline" name="pIncline" placeholder="Incline" required/>
 <label for="pIncline">Incline</label>
 </div>
 

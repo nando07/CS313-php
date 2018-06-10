@@ -70,16 +70,16 @@ session_start();
 		   <form id="abForm" action="insertCrunches.php" method="POST">
 
 
-<input type="number" min="0" class="form-control" id="abStandard" name="abStandard" placeholder="Standard" required autofocus/>
+<input type="number" min="0" max="1000" class="form-control" id="abStandard" name="abStandard" placeholder="Standard" required autofocus/>
 <br />
 
-<input type="number" min="0" class="form-control" id="abReverse" name="abReverse" placeholder="Reverse" required/>
+<input type="number" min="0" max="1000" class="form-control" id="abReverse" name="abReverse" placeholder="Reverse" required/>
 <br />
 
-<input type="number" min="0" class="form-control" id="abTwisting" name="abTwisting" placeholder="Twisting" required />
+<input type="number" min="0" max="1000" class="form-control" id="abTwisting" name="abTwisting" placeholder="Twisting" required />
 <br />
 
-<input type="number" min="0"  class="form-control" id="abTuck" name="abTuck" placeholder="Tuck" required />
+<input type="number" min="0" max="1000"  class="form-control" id="abTuck" name="abTuck" placeholder="Tuck" required />
 <br />
 
 
@@ -100,22 +100,22 @@ session_start();
 		   <form class="form-signin" action="insertPushups.php" method="POST">
 
 <div class="form-label-group">
-<input type="number" min="0" class="form-control" id="pStandard" name="pStandard" placeholder="Standard" required/>
+<input type="number" min="0" max="1000" class="form-control" id="pStandard" name="pStandard" placeholder="Standard" required/>
 <br />
 </div>
 
 <div class="form-label-group">
-<input type="number" min="0" class="form-control" id="pWide" name="pWide" placeholder="Wide" required/>
+<input type="number" min="0" max="1000" class="form-control" id="pWide" name="pWide" placeholder="Wide" required/>
 <br />
 </div>
 
 <div class="form-label-group">
-<input type="number" min="0" class="form-control" id="pArmy" name="pArmy" placeholder="Army" required/>
+<input type="number" min="0" max="1000" class="form-control" id="pArmy" name="pArmy" placeholder="Army" required/>
 <br />
 </div>
 
 <div class="form-label-group">
-<input type="number" min="0" class="form-control" id="pIncline" name="pIncline" placeholder="Incline" required/>
+<input type="number" min="0" max="1000" class="form-control" id="pIncline" name="pIncline" placeholder="Incline" required/>
 <br />
 </div>
 
@@ -138,8 +138,8 @@ session_start();
 			  <h3>Running</h3><br />
 		   <form id="rForm" action="" method="POST">
 
-<label for="rTime">Time</label>
-<input type="text" class="form-control" id="rTime" name="rTime" required/>
+<label for="rTime">Distance</label>
+<input type="number" min="0" max="100" class="form-control" id="rDistance" name="rDistance" required/>
 
 <br />
 

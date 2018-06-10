@@ -65,20 +65,20 @@ $id = $_REQUEST['id'];
 		   <form id="pForm" action="update_p.php?id=<?php echo $id;?>" method="POST">
 
 <label for="pStandard">Standard</label>
-<input type="number" min="0" class="form-control" id="ePStandard" name="ePStandard" required/>
+<input type="number" min="0" max="1000" class="form-control" id="ePStandard" name="ePStandard" required/>
 
 
 <label for="pWide">Wide</label>
-<input type="number" min="0" class="form-control" id="ePWide" name="ePWide" required/>
+<input type="number" min="0" max="1000" class="form-control" id="ePWide" name="ePWide" required/>
 
 
 <label for="pArmy">Army</label>
-<input type="number" min="0" class="form-control" id="ePArmy" name="ePArmy" required/>
+<input type="number" min="0" max="1000" class="form-control" id="ePArmy" name="ePArmy" required/>
 
 
 
 <label for="pIncline">Incline</label>
-<input type="number" min="0" class="form-control" id="ePIncline" name="ePIncline" required/>
+<input type="number" min="0" max="1000" class="form-control" id="ePIncline" name="ePIncline" required/>
 <br />
 
 

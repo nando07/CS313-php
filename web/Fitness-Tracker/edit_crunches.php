@@ -63,20 +63,20 @@ $id = $_REQUEST['id'];
 		   <form id="editAbForm" action="update_c.php?id=<?php echo $id;?>" method="POST">
 
 <label for="abStandard">Standard</label>
-<input type="number" min="0" class="form-control" id="eAbStandard" name="eAbStandard" required/>
+<input type="number" min="0" max="1000" class="form-control" id="eAbStandard" name="eAbStandard" required/>
 
 
 <label for="abReverse">Reverse </label>
-<input type="number" min="0" class="form-control" id="eAbReverse" name="eAbReverse" required/>
+<input type="number" min="0" max="1000" class="form-control" id="eAbReverse" name="eAbReverse" required/>
 
 
 <label for="abTwisting">Twisting</label>
-<input type="number" min="0" class="form-control" id="eAbTwisting" name="eAbTwisting" required/>
+<input type="number" min="0" max="1000" class="form-control" id="eAbTwisting" name="eAbTwisting" required/>
 
 
 
 <label for="abTuck">Tuck:</label>
-<input type="number" min="0"  class="form-control" id="eAbTuck" name="eAbTuck" required/>
+<input type="number" min="0" max="1000" class="form-control" id="eAbTuck" name="eAbTuck" required/>
 <br />
 
 

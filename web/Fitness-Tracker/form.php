@@ -66,7 +66,7 @@ $query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$
   <body>
     <form class="form-signin" action="form.php" method="POST">
       <div class="text-center mb-4">
-      <p><i class="fas fa-chart-line fa-5x"></p>
+      <p><i class="fas fa-chart-line fa-5x"></i></p>
         <h1 style="font-family: 'Permanent Marker', cursive;" class="h3 mb-3 font-weight-normal">Welcome Back!</h1>
         <p>Input your username and password to see your current stats! Test with 'Fego' and 'pass'</p>
 <!--  

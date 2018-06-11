@@ -25,7 +25,7 @@
     <form class="form-signin" action="createAccount.php" method="POST">
       <div class="text-center mb-4">
 
-        <p><i class="fas fa-heartbeat"></i></p>
+        <p><i class="fas fa-chart-line fa-5x"></i></p>
         <h1 style="font-family: 'Permanent Marker', cursive;" class="h3 mb-3 font-weight-normal">WELCOME</h1>
         
       </div>

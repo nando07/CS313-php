@@ -207,11 +207,11 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
-			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' 
-			  . $row['username'] . '<td>' . $row['standard'] 
-			  . '</td>' . '<td>' . $row['wide'] . '</td>' . '<td>' 
-			  . $row['army'] . '</td>' . '<td>' . $row['incline'] . '</td>' 
-			  . '<td><a href="edit_pushups.php?id=' . $row['p_id'] . '"' . 'class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
+			  echo '<tr><td align="center">' . $row['date'] . '</td>' . '<td align="center">' 
+			  . $row['username'] . '<td align="center">' . $row['standard'] 
+			  . '</td>' . '<td align="center">' . $row['wide'] . '</td>' . '<td align="center">' 
+			  . $row['army'] . '</td>' . '<td align="center">' . $row['incline'] . '</td>' 
+			  . '<td align="center"><a href="edit_pushups.php?id=' . $row['p_id'] . '"' . 'class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
 			}
 			?>
 			</tbody>
@@ -260,10 +260,10 @@ $statement->execute();
 				
 				
 
-			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' . $row['username'] 
-			  . '</td>' .'<td>' . $row['standard'] . '</td>' . '<td>' 
-			  . $row['reverse'] . '</td>' . '<td>' . $row['twisting'] . '</td>' . '<td>' 
-			  . $row['tuck'] . '<td><a href="edit_crunches.php?id=' . $row['c_id'] . '"' .'class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
+			  echo '<tr><td align="center">' . $row['date'] . '</td>' . '<td align="center">' . $row['username'] 
+			  . '</td>' .'<td align="center">' . $row['standard'] . '</td>' . '<td align="center">' 
+			  . $row['reverse'] . '</td>' . '<td align="center">' . $row['twisting'] . '</td>' . '<td align="center">' 
+			  . $row['tuck'] . '<td align="center"><a href="edit_crunches.php?id=' . $row['c_id'] . '"' .'class="btn btn-sm btn-outline-secondary">Edit</a></td></tr>';
 			}
 			?>
 			</tbody>

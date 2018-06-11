@@ -17,6 +17,7 @@ if (!isset($_SESSION['username_session'])) {
 	<title>stats</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -182,7 +183,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 	<table class="table table-striped">
 	<thead>
 	<tr>
-			<th>Date</th>
+			<th><i class="far fa-calendar-alt"></i></th>
 			<th>User</th>
 			<th>Std.</th>
 			<th>Wide</th>

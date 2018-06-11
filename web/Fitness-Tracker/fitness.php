@@ -18,6 +18,7 @@ if (!isset($_SESSION['username_session'])) {
     <title>Fitness Tracker</title>
 
     <!-- Bootstrap core CSS -->
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->

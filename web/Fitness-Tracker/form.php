@@ -64,8 +64,7 @@ $query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$
   <body>
     <form class="form-signin" action="form.php" method="POST">
       <div class="text-center mb-4">
-
-        <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <p><i class="fas fa-heartbeat"></i></p>
         <h1 style="font-family: 'Permanent Marker', cursive;" class="h3 mb-3 font-weight-normal">Welcome Back!</h1>
         <p>Input your username and password to see your current stats! Test with 'Fego' and 'pass'</p>
 <!--  

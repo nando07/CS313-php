@@ -12,6 +12,8 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
 	<link href="styles.css" rel="stylesheet">
@@ -23,7 +25,7 @@
     <form class="form-signin" action="createAccount.php" method="POST">
       <div class="text-center mb-4">
 
-        <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <p><i class="fas fa-heartbeat"></i></p>
         <h1 style="font-family: 'Permanent Marker', cursive;" class="h3 mb-3 font-weight-normal">WELCOME</h1>
         
       </div>

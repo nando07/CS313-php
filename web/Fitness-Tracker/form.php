@@ -54,6 +54,8 @@ $query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
 	<link href="styles.css" rel="stylesheet">

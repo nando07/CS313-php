@@ -12,6 +12,8 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
 	<link href="styles.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="floating-labels.css" rel="stylesheet">
@@ -22,7 +24,7 @@
       <div class="text-center mb-4">
 
         <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">WELCOME</h1>
+        <h1 style="font-family: 'Permanent Marker', cursive;" class="h3 mb-3 font-weight-normal">WELCOME</h1>
         
       </div>
 

@@ -54,6 +54,8 @@ $query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
 	<link href="styles.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="floating-labels.css" rel="stylesheet">
@@ -64,7 +66,7 @@ $query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$
       <div class="text-center mb-4">
 
         <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Let's authenticate you!</h1>
+        <h1 style="font-family: 'Permanent Marker', cursive;" class="h3 mb-3 font-weight-normal">Welcome Back!</h1>
         <p>Input your username and password to see your current stats! Test with 'Fego' and 'pass'</p>
 <!--  
         <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>-->

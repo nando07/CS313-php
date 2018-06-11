@@ -189,7 +189,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			<th>Wide</th>
 			<th>Army</th>
 			<th>Incline</th>
-			<th></th>
+			<th><i class="fas fa-exclamation-circle"></i></th>
 			</tr>
 			</thead>
 			<tbody>
@@ -231,7 +231,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			<th>Reverse</th>
 			<th>Twist</th>
 			<th>Tuck</th>
-			<th></th>
+			<th><i class="fas fa-exclamation-circle"></i></th>
 			</tr>
 			</thead>
 			<tbody>

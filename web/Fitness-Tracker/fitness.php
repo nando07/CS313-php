@@ -69,7 +69,7 @@ if (!isset($_SESSION['username_session'])) {
           <h1 class="jumbotron-heading">Fitness Tracker</h1>
           <p class="lead text-light">Being fit means that you are able to push the limits of your body and not face any serious consequences as a result. This means that you can run long distances, lift heavy weights, go for brisk walks and do all the other things that place your body under stress.</p>
           <p>
-            <a href="form.php" class="btn btn-primary my-2">See Your Stats</a>
+            <a href="stats.php" class="btn btn-primary my-2">See Your Stats</a>
           </p>
         </div>
       </section>

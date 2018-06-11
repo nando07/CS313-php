@@ -184,7 +184,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 	<thead>
 	<tr>
 			<th><i class="far fa-calendar-alt"></i></th>
-			<th>User</th>
+			<th><i class="fas fa-user"></i></th>
 			<th>Std.</th>
 			<th>Wide</th>
 			<th>Army</th>
@@ -225,8 +225,8 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 	<table class="table table-striped">
 	<thead>
 	<tr>
-			<th>Date</th>
-			<th>User</th>
+	<th><i class="far fa-calendar-alt"></i></th>
+			<th><i class="fas fa-user"></i></th>
 			<th>Std.</th>
 			<th>Reverse</th>
 			<th>Twist</th>

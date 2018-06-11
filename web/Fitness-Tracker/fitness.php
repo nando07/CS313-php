@@ -50,7 +50,7 @@ if (!isset($_SESSION['username_session'])) {
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-            <strong>Fit Tracker</strong>
+            <strong style="font-family: 'Permanent Marker', cursive;">Fit Tracker</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@ if (!isset($_SESSION['username_session'])) {
             <source src="videos/homeMin.mp4" type="video/mp4">    
         </video>
         <div id="home-overlay"></div>
-          <h1 class="jumbotron-heading">Fitness Tracker</h1>
+          <h1 style="font-family: 'Permanent Marker', cursive;" class="jumbotron-heading">Fitness Tracker</h1>
           <p class="lead text-light">Being fit means that you are able to push the limits of your body and not face any serious consequences as a result. This means that you can run long distances, lift heavy weights, go for brisk walks and do all the other things that place your body under stress.</p>
           <p>
             <a href="stats.php" class="btn btn-primary my-2">See Your Stats</a>

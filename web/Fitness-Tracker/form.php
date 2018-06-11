@@ -18,7 +18,7 @@ require_once('connectToDB.php');
 $db = get_db();
 
 if(isset($_POST['submit'])) {
-$query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'";	
+$query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$username'";	
     
     $statement = $db->prepare($query);
 
@@ -26,12 +26,17 @@ $query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$
 
     $row = $statement->fetch(PDO::FETCH_ASSOC);
 
-    if ($row['username'] == $username && $row['password'] == $password) {
+    $hashedPasswordFromDB = $row['password'];
+    if (($row['username'] == $username) && (password_verify($password, $hashedPasswordFromDB)))
+    {
+      // if ($row['username'] == $username && $row['password'] == $password) {
       $success = "Username and Password are valid!";
       header("Location: stats.php");
-  } else {
-     $error = "Invalid username or password"; 
-  }
+      die();
+    } else {
+      $error = "Invalid username or password"; 
+    }
+  
 }
 ?>
 
@@ -55,7 +60,7 @@ $query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$
   </head>
 
   <body>
-    <form class="form-signin" method="POST">
+    <form class="form-signin" action="form.php" method="POST">
       <div class="text-center mb-4">
 
         <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
@@ -90,7 +95,7 @@ $query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">See Your Stats!</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign In</button>
       <p class="mt-5 mb-3 text-muted text-center">&copy; Created by: Fernando Gomez 2018</p>
     </form>
 

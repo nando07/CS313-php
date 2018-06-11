@@ -174,28 +174,8 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 		//	echo '<p style="text-align:center;">' . $username . ', ' . $password . '</p>';
 		// }
 
-			$query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username' AND u.password = '$password'");	
+			$query = $db->query("SELECT username, password FROM workout.user AS u WHERE u.username = '$username'");	
 			$validation = $query->fetch(PDO::FETCH_ASSOC);
-
-			// if ($validation['username'] == $username && $validation['password'] == $password) {
-			// 	echo '<p style="text-align:center;">user exists!</p>';
-				
-
-				// foreach ($db->query('SELECT username, password FROM workout.user') as $row)
-				// {
-				//   echo '<p style="text-align:center;">user: ' . $row['username'] . ' password: ' . $row['password'] . '</p>';
-				// //   echo ' password: ' . $row['password'];
-				// //   echo '<br/>';
-				// }
-				
-				// $statement = $db->query('SELECT date, id FROM workout.session');
-				// while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-				// {
-				//   echo 'This is the date: ' . $row['date'] . ' Session ID: ' . $row['id'] . '<br/>';
-				// }
-			// } else {
-			// 	echo 'Please check username or password';
-			// }
 	?>
 
 	<div class="container">
@@ -221,7 +201,6 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			WHERE workout.session.user_id = workout.user.id                  
 			AND workout.session.pushups_id = workout.pushups.p_id                                                      
 			AND workout.user.username = '$username'
-			AND workout.user.password = '$password'
 			ORDER BY date";
 
 			$statement = $db->prepare($query);
@@ -273,7 +252,6 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			WHERE workout.session.user_id = workout.user.id                  
 			AND workout.session.crunches_id = workout.crunches.c_id                                                      
 		    AND workout.user.username = '$username'
-			AND workout.user.password = '$password'
 			ORDER BY date";
 
 $statement = $db->prepare($query);

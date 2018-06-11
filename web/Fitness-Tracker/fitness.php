@@ -21,6 +21,8 @@ if (!isset($_SESSION['username_session'])) {
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="styles.css" rel="stylesheet">
   </head>

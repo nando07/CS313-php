@@ -6,8 +6,6 @@ try {
 
 $dbUrl = getenv('DATABASE_URL');
 
-// echo 'This is the DB URL: ' . $dbUrl . '<br/>';
-
 $dbopts = parse_url($dbUrl);
 
 $dbHost = $dbopts["host"];

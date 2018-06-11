@@ -204,14 +204,6 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			$statement = $db->prepare($query);
 			$statement->execute();
 
-
-			// $statement = $db->query("SELECT date, username, standard, wide, army, incline                                                                              
-			// FROM workout.session, workout.user, workout.pushups      
-			// WHERE workout.session.user_id = workout.user.id                  
-			// AND workout.session.pushups_id = workout.pushups.id                                                      
-			// AND workout.user.username = '$username'
-			// AND workout.user.password = '$password'
-			// ORDER BY date");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
 			  echo '<tr><td>' . $row['date'] . '</td>' . '<td>' 

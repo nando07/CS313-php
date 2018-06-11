@@ -71,3 +71,8 @@ footer p {
 .input {
   float: right;
 }
+
+th {
+    background-color: #8B0000;
+    color: white;
+}

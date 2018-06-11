@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if (!isset($_SESSION['username_session'])) {
+  header("Location: form.php");
+  die();
+}
+
 $standard = $_POST['abStandard'];
 $reverse = $_POST['abReverse'];
 $twisting = $_POST['abTwisting'];

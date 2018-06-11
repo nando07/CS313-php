@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if (!isset($_SESSION['username_session'])) {
+    header("Location: form.php");
+    die();
+  }
+
 $pStandard = $_POST['pStandard'];
 $pWide = $_POST['pWide'];
 $pArmy = $_POST['pArmy'];

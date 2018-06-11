@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (!isset($_SESSION['username_session'])) {
+  header("Location: form.php");
+  die();
+}
 $id = $_REQUEST['id'];
 ?>
 

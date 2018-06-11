@@ -95,7 +95,8 @@ $query = "SELECT username, password FROM workout.user AS u WHERE u.username = '$
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign In</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign In</button><br>
+      <p class="text-center mb-4">or <a  href="form.php">Sign In</a></p>
       <p class="mt-5 mb-3 text-muted text-center">&copy; Created by: Fernando Gomez 2018</p>
     </form>
 

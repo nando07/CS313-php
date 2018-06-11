@@ -66,7 +66,7 @@ if (!isset($_SESSION['username_session'])) {
   <source src="videos/abs.mp4" type="video/mp4">
 </video>
 		  <div class="card-body">
-		   <h3>Crunches</h3><br />
+		   <h3 style="font-family: 'Permanent Marker', cursive;">Crunches</h3><br />
 		   <form id="abForm" action="insertCrunches.php" method="POST">
 
 
@@ -96,7 +96,7 @@ if (!isset($_SESSION['username_session'])) {
 </video>
 		  <!-- <img class="card-img-top" src="img/pushups.jpg" alt="Card image cap"> -->
 		  <div class="card-body">
-			  <h3>Push-ups</h3><br />
+			  <h3 style="font-family: 'Permanent Marker', cursive;">Push-ups</h3><br />
 		   <form class="form-signin" action="insertPushups.php" method="POST">
 
 <div class="form-label-group">
@@ -135,7 +135,7 @@ if (!isset($_SESSION['username_session'])) {
 </video>
 		  <div class="card-body">
 			  <p style="color:red;">Still in Beta</p>
-			  <h3>Running</h3><br />
+			  <h3 style="font-family: 'Permanent Marker', cursive;">Running</h3><br />
 		   <form id="rForm" action="" method="POST">
 
 <label for="rTime">Distance</label>
@@ -179,7 +179,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 	?>
 
 	<div class="container">
-	<h1>Push-ups</h1>
+	<h1 style="font-family: 'Permanent Marker', cursive;">Push-ups</h1>
 	<div class="row">
 	<table class="table table-striped">
 	<thead>
@@ -221,7 +221,7 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 			</div>
 
 <div class="container">
-	<h1>Crunches</h1>
+	<h1 style="font-family: 'Permanent Marker', cursive;">Crunches</h1>
 	<div class="row">
 	<table class="table table-striped">
 	<thead>
@@ -249,13 +249,6 @@ echo '<p style="text-align:center;">' . (date("Y-m-d h:i:s",$t)) . '</p>';
 $statement = $db->prepare($query);
 $statement->execute();
 
-			// $statement = $db->query("SELECT date, username, standard, reverse, twisting, tuck                                                                              
-			// FROM workout.session, workout.user, workout.crunches      
-			// WHERE workout.session.user_id = workout.user.id                  
-			// AND workout.session.crunches_id = workout.crunches.id                                                      
-		    // AND workout.user.username = '$username'
-			// AND workout.user.password = '$password'
-			// ORDER BY date");
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
 				

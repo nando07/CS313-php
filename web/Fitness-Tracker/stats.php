@@ -18,6 +18,7 @@ if (!isset($_SESSION['username_session'])) {
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -154,8 +155,8 @@ if (!isset($_SESSION['username_session'])) {
 
 </main>
 
-
-<h1 style="text-align:center;">Your Stats!</h1>
+<br><br>
+<h1 style="text-align:center; font-family: 'Permanent Marker', cursive;">Your Stats!</h1>
 	<?php 
 
 		require_once('connectToDB.php');

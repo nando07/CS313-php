@@ -51,7 +51,7 @@ if (!isset($_SESSION['username_session'])) {
       <div class="navbar navbar-dark" id="nav-style">
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center">
-          <p><i class="fal fa-chart-line"></i></p>
+          <p><i class="fas fa-chart-line"></i></p>
             <strong style="font-family: 'Permanent Marker', cursive;">Fit Tracker</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">

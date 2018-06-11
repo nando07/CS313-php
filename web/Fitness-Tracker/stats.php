@@ -23,7 +23,7 @@ if (!isset($_SESSION['username_session'])) {
 </head>
 <body>
 <header>
-      <div class="collapse bg-dark" id="navbarHeader">
+      <div class="collapse bg-dark" style="background-color:black;" id="navbarHeader">
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
